@@ -1,0 +1,21 @@
+.Tag {
+  border-radius: 4px;
+  border-style: solid;
+  border-width: 1px;
+  display: inline-block;
+  font-size: var(--typography-font-size-100);
+  line-height: var(--typography-line-height-100);
+  padding: 0.25rem 0.5rem;
+}
+
+/* Variant */
+
+.TagPrimary {
+  background: var(--color-blue);
+  border-color: transparent;
+  color: var(--color-white);
+}
+
+.TagSecondary {
+  border-color: var(--color-gray);
+}

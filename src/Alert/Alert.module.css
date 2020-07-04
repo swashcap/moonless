@@ -1,0 +1,34 @@
+.Alert {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  min-height: 2.5rem;
+  padding: 0 1rem;
+}
+
+.AlertButton {
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  margin: 0 -1rem 0 0;
+  padding: 0.5rem;
+  vertical-align: top;
+}
+
+/** Variant */
+
+.AlertError {
+  background: var(--color-red);
+  color: var(--color-white);
+}
+
+.AlertSuccess {
+  background: var(--color-green);
+  color: var(--color-white);
+}
+
+.AlertWarning {
+  background: var(--color-yellow);
+  color: var(--color-black);
+}

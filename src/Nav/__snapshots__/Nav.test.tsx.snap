@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Nav It should render. 1`] = `
+<div>
+  <nav
+    class="Nav"
+  >
+    <ul
+      class="NavList"
+    />
+  </nav>
+</div>
+`;

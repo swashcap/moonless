@@ -1,0 +1,31 @@
+/**
+ * VisuallyHidden
+ *
+ * Taken from H5BP's `.visuallyhidden` class:
+ * {@link https://github.com/h5bp/html5-boilerplate/blob/3bb9b72319786ed93409b6ae59579246ff1e81b5/dist/css/main.css#L103-L140}
+ */
+
+.VisuallyHidden {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.VisuallyHiddenFocusable:active,
+:global(.storybook-active).VisuallyHiddenFocusable,
+.VisuallyHiddenFocusable:focus,
+:global(.storybook-focus).VisuallyHiddenFocusable {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}

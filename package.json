@@ -1,0 +1,72 @@
+{
+  "author": "Cory Reed",
+  "dependencies": {
+    "@babel/runtime": "^7.10.4"
+  },
+  "description": "A quiet design system.",
+  "devDependencies": {
+    "@babel/plugin-transform-runtime": "^7.10.4",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
+    "@storybook/addon-docs": "^5.3.19",
+    "@storybook/preset-typescript": "^3.0.0",
+    "@storybook/react": "^5.3.19",
+    "@testing-library/jest-dom": "^5.11.0",
+    "@testing-library/react": "^10.4.3",
+    "@testing-library/react-hooks": "^3.3.0",
+    "@types/jest": "^26.0.3",
+    "@types/react": "16.9.38",
+    "@types/react-dom": "^16.9.8",
+    "@typescript-eslint/eslint-plugin": "^3.5.0",
+    "@typescript-eslint/parser": "^3.5.0",
+    "babel-loader": "^8.1.0",
+    "eslint": "^7.4.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-prettier": "^3.1.4",
+    "fork-ts-checker-webpack-plugin": "^5.0.6",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^26.1.0",
+    "lint-staged": "^10.2.11",
+    "normalize.css": "^8.0.1",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.0.5",
+    "react": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "stylelint": "^13.6.1",
+    "stylelint-config-css-modules": "^2.2.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6",
+    "typescript-plugin-css-modules": "^2.3.0"
+  },
+  "homepage": "https://github.com/swashcap/moonless#readme",
+  "license": "MIT",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "name": "moonless",
+  "peerDependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "repository": "github:swashcap/moonless",
+  "scripts": {
+    "build": "",
+    "format": "run-p format:*",
+    "format:source": "yarn lint:source --fix",
+    "format:styles": "stylelint --fix 'src/**/*.css'",
+    "lint": "run-p lint:*",
+    "lint:source": "eslint --ext .js,.ts,.tsx '*.js' '.storybook/**/*.js' 'src/**/*.{ts,tsx}'",
+    "lint:styles": "stylelint 'src/**/*.css'",
+    "start": "start-storybook --port 8000",
+    "test": "NODE_ENV=test jest"
+  },
+  "sideEffects": [
+    "./src/utils/useId.js"
+  ],
+  "version": "0.0.1"
+}

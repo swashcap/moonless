@@ -1,0 +1,50 @@
+/** Checkbox: Label */
+
+.CheckboxLabel {
+  display: flex;
+}
+
+/** Checkbox: Indicator */
+
+.CheckboxIndicator {
+  align-items: center;
+  background: var(--color-white);
+  border-radius: 4px;
+  border: 1px solid var(--color-black);
+  cursor: pointer;
+  display: flex;
+  height: 1.5rem;
+  justify-content: center;
+  margin-right: var(--space-100);
+  width: 1.5rem;
+}
+
+/** Checkbox: Indicator: Checked */
+
+input:checked ~ .CheckboxIndicator {
+  background: var(--color-blue);
+  border-color: var(--color-blue);
+  color: var(--color-white);
+}
+
+/** Checkbox: Indicator: Disabled */
+
+input[disabled] ~ .CheckboxIndicator {
+  border-color: var(--color-gray);
+  color: var(--color-gray);
+}
+
+input[disabled]:checked ~ .CheckboxIndicator {
+  background: var(--color-gray);
+  color: var(--color-white);
+}
+
+/** Checkbox: Error */
+
+.CheckboxError {
+  color: var(--color-red);
+  font-size: var(--typography-font-size-100);
+  line-height: var(--typography-line-height-100);
+  margin-top: var(--space-100);
+  width: 100%;
+}

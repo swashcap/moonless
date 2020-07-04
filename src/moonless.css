@@ -1,0 +1,15 @@
+@import './tokens/color.css';
+@import './tokens/space.css';
+@import './tokens/typography.css';
+@import '../node_modules/normalize.css/normalize.css';
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.5;
+}

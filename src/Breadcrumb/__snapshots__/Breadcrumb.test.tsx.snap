@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Breadcrumb It should render. 1`] = `
+<div>
+  <nav
+    class="Breadcrumb"
+  >
+    <ol
+      class="BreadcrumbList"
+      itemscope=""
+      itemtype="http://schema.org/BreadcrumbList"
+    >
+      <li
+        class="BreadcrumbListItem"
+        itemprop="itemListElement"
+        itemscope=""
+        itemtype="http://schema.org/ListItem"
+      >
+        <a
+          class="BreadcrumbLink"
+          href="/"
+          itemprop="item"
+        >
+          <span
+            itemprop="name"
+          >
+            Home
+          </span>
+        </a>
+        <meta
+          content="1"
+          itemprop="position"
+        />
+      </li>
+    </ol>
+  </nav>
+</div>
+`;

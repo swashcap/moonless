@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radio It should render. 1`] = `
+<div>
+  <div
+    class="Radio"
+  >
+    <input
+      type="radio"
+    />
+  </div>
+</div>
+`;

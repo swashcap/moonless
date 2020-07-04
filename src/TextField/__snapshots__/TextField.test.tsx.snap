@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TextField It should render. 1`] = `
+<div>
+  <div
+    class="TextField"
+  >
+    <input
+      class="TextFieldInput"
+      id="text-field-1"
+      value=""
+    />
+  </div>
+</div>
+`;

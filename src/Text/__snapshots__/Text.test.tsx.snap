@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Text It should render. 1`] = `
+<div>
+  <span
+    class="Text"
+  >
+    Text
+  </span>
+</div>
+`;

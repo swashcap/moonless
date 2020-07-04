@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkbox It should render. 1`] = `
+<div>
+  <div
+    class="Checkbox"
+  >
+    <label
+      class="CheckboxLabel"
+      for="checkbox-1"
+    >
+      <input
+        class="VisuallyHidden"
+        id="checkbox-1"
+        type="checkbox"
+      />
+      <span
+        class="CheckboxIndicator"
+      >
+        <svg
+          aria-hidden="true"
+          class="Icon"
+          viewBox="0 0 12 12"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M2.5 6.5l2.5 3 4.5-6"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </span>
+    </label>
+  </div>
+</div>
+`;

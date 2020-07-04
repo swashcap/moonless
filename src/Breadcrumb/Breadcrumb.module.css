@@ -1,0 +1,31 @@
+/** Breadcrumb: List */
+
+.BreadcrumbList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/** Breadcrumb: List: Item */
+
+.BreadcrumbListItem::after {
+  content: '/';
+  display: inline-block;
+}
+
+.BreadcrumbListItem:last-child::after {
+  content: '';
+  display: none;
+}
+
+/** Breadcrumb: Link */
+
+.BreadcrumbLink {
+  display: inline-block;
+  padding: var(--spacing-100);
+}
+
+.BreadcrumbLink[aria-current] {
+  font-weight: 700;
+}

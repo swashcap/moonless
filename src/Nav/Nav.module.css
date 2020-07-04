@@ -1,0 +1,24 @@
+/** Nav */
+
+.Nav {
+  background: var(--color-blue);
+  color: var(--color-white);
+}
+
+/** Nav: List */
+
+.NavList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/** Nav: Link */
+
+.NavLink {
+  color: inherit;
+  display: inline-block;
+  padding: var(--space-100);
+  text-decoration: none;
+}

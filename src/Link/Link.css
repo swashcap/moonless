@@ -1,0 +1,21 @@
+/* Link */
+
+.Link {
+  color: black;
+  text-decoration: underline;
+}
+
+.Link:focus,
+.Link.storybook-focus {
+  color: navy;
+}
+
+.Link:hover,
+.Link.storybook-hover {
+  color: blue;
+}
+
+.Link:active,
+.Link.storybook-active {
+  color: red;
+}

@@ -1,0 +1,53 @@
+/* Button */
+
+.Button {
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: inherit;
+  margin: 0;
+  padding: 1em;
+}
+
+.Button[disabled] {
+  cursor: default;
+}
+
+/* Button: primary */
+
+.ButtonPrimary {
+  background: navy;
+  border-color: transparent;
+  color: white;
+}
+
+/* stylelint-disable no-duplicate-selectors */
+.ButtonPrimary:focus,
+:global(.storybook-focus).ButtonPrimary {
+  background: blue;
+}
+
+.ButtonPrimary:hover,
+:global(.storybook-hover).ButtonPrimary {
+  background: royalblue;
+}
+
+.ButtonPrimary:hover,
+:global(.storybook-hover).ButtonPrimary {
+  background: lightblue;
+}
+/* stylelint-enable no-duplicate-selectors */
+
+.ButtonPrimary[disabled] {
+  background: gray;
+}
+
+/* Button: secondary */
+
+.ButtonSecondary {
+  background: white;
+  border-color: navy;
+  color: navy;
+}
