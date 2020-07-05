@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import styles from './Checkbox.module.css';
-import { CheckIcon } from '../Icon/Icon';
+import { CheckIcon, MinusIcon } from '../Icon/Icon';
 import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden.module.css';
 import { useId } from '../utils/useId';
 
@@ -14,14 +14,35 @@ export interface CheckboxProps
   disabled?: boolean;
   error?: React.ReactNode;
   id?: string;
+  indeterminate?: boolean;
   label?: React.ReactNode;
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => any;
 }
 
 export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
-  ({ checked, disabled, error, id: idProp, label, onChange, ...rest }, ref) => {
+  (
+    {
+      checked,
+      disabled,
+      error,
+      id: idProp,
+      indeterminate,
+      label,
+      onChange,
+      ...rest
+    },
+    ref
+  ) => {
     const fallbackId = useId('checkbox-');
     const errorId = useId('checkbox-error-');
+    const localRef = useRef<HTMLInputElement | null>();
+
+    useEffect(() => {
+      if (
+        localRef.current && localRef.current.indeterminate !== indeterminate) {
+        localRef.current.indeterminate = !!indeterminate;
+      }
+    }, [indeterminate, localRef])
 
     const id = idProp ?? fallbackId;
 
@@ -36,11 +57,23 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
             disabled={disabled}
             id={id}
             onChange={onChange}
-            ref={ref}
+            ref={(element) => {
+              if (typeof ref === 'function') {
+                ref(element);
+              } else if (typeof ref === 'object' && ref) {
+                ref.current = element;
+              }
+
+              localRef.current = element;
+            }}
             type="checkbox"
           />
-          <span className={styles.CheckboxIndicator}>
-            <CheckIcon aria-hidden="true" />
+          <span aria-hidden="true" className={styles.CheckboxIndicator}>
+            {indeterminate ? (
+              <MinusIcon className={styles.CheckboxIndicatorIcon} />
+            ) : (
+              <CheckIcon className={styles.CheckboxIndicatorIcon} />
+            )}
           </span>
           {label}
         </label>

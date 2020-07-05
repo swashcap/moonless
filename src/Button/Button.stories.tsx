@@ -18,7 +18,7 @@ export const Primary = () => (
 
 export const Secondary = () => (
   <div>
-    <SecondaryButton>Primary</SecondaryButton>
+    <SecondaryButton>Secondary</SecondaryButton>
     <SecondaryButton className="storybook-focus">focus</SecondaryButton>
     <SecondaryButton className="storybook-hover">hover</SecondaryButton>
     <SecondaryButton className="storybook-active">active</SecondaryButton>
@@ -28,4 +28,12 @@ export const Secondary = () => (
 
 export const OnClick = () => (
   <PrimaryButton onClick={console.log}>OnClick</PrimaryButton>
+);
+
+export const Size = () => (
+  <div>
+    <PrimaryButton size="small">Small</PrimaryButton>
+    <PrimaryButton size="medium">Medium</PrimaryButton>
+    <PrimaryButton size="large">Large</PrimaryButton>
+  </div>
 );

@@ -1,21 +1,41 @@
 .Tag {
-  border-radius: 4px;
+  border-width: var(--theme-size-small-border-width);
+  border-radius: var(--theme-size-small-border-radius);
   border-style: solid;
-  border-width: 1px;
   display: inline-block;
-  font-size: var(--typography-font-size-100);
-  line-height: var(--typography-line-height-100);
-  padding: 0.25rem 0.5rem;
+  font-size: var(--theme-size-small-font-size);
+  line-height: var(--theme-size-small-line-height);
+  padding: var(--theme-size-small-padding);
 }
 
 /* Variant */
 
+.TagError {
+  background: var(--theme-color-error-background);
+  border-color: var(--theme-color-error-border);
+  color: var(--theme-color-error-text);
+}
+
 .TagPrimary {
-  background: var(--color-blue);
-  border-color: transparent;
-  color: var(--color-white);
+  background: var(--theme-color-primary-background);
+  border-color: var(--theme-color-primary-border);
+  color: var(--theme-color-primary-text);
 }
 
 .TagSecondary {
-  border-color: var(--color-gray);
+  background: var(--theme-color-secondary-background);
+  border-color: var(--theme-color-secondary-border);
+  color: var(--theme-color-secondary-text);
+}
+
+.TagSuccess {
+  background: var(--theme-color-success-background);
+  border-color: var(--theme-color-success-border);
+  color: var(--theme-color-success-text);
+}
+
+.TagWarning {
+  background: var(--theme-color-warning-background);
+  border-color: var(--theme-color-warning-border);
+  color: var(--theme-color-warning-text);
 }

@@ -8,16 +8,18 @@ export type NavProps = React.DetailedHTMLProps<
   HTMLDivElement
 >;
 
-export type NavItemProps = React.DetailedHTMLProps<
+export interface NavItemProps extends React.DetailedHTMLProps<
   React.AnchorHTMLAttributes<HTMLAnchorElement>,
   HTMLAnchorElement
->;
+> {
+  isCurrent?: boolean;
+}
 
 export class Nav extends React.Component<NavProps> {
-  static Item = ({ children, className, ...rest }: NavItemProps) => {
+  static Item = ({ children, className, isCurrent, ...rest }: NavItemProps) => {
     return (
       <li className={className}>
-        <a className={styles.NavLink} {...rest}>
+        <a className={clsx(styles.NavLink, isCurrent && styles.NavLinkCurrent)} {...rest}>
           {children}
         </a>
       </li>
@@ -25,10 +27,10 @@ export class Nav extends React.Component<NavProps> {
   };
 
   render() {
-    const { children, className, ...rest } = this.props;
+    const { children, ...rest } = this.props;
 
     return (
-      <nav className={clsx(styles.Nav, className)} {...rest}>
+      <nav {...rest}>
         <ul className={styles.NavList}>{children}</ul>
       </nav>
     );

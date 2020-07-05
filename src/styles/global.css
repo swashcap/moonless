@@ -1,0 +1,14 @@
+/** Styles: Global */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--theme-color-background);
+  color: var(--theme-color-text);
+  font-family: sans-serif;
+  line-height: 1.5;
+}

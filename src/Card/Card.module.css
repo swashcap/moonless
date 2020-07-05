@@ -1,4 +1,10 @@
+/** Card */
+
 .Card {
-  border: 1px solid gray;
+  background: var(--color-gray-600);
+  border-color: var(--color-gray-500);
+  border-radius: var(--theme-size-medium-border-radius);
+  border-style: solid;
+  border-width: var(--theme-size-medium-border-width);
   padding: 1em;
 }

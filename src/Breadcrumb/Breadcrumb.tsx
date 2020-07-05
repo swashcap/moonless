@@ -9,7 +9,7 @@ export interface BreadcrumbProps
   > {
   items: ReadonlyArray<
     Readonly<{
-      current?: boolean;
+      isCurrent?: boolean;
       href: string;
       name: string;
     }>
@@ -27,7 +27,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
       itemScope
       itemType="http://schema.org/BreadcrumbList"
     >
-      {items.map(({ current, href, name }, index) => (
+      {items.map(({ href, isCurrent, name }, index) => (
         <li
           className={styles.BreadcrumbListItem}
           itemProp="itemListElement"
@@ -36,7 +36,7 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
           key={href}
         >
           <a
-            aria-current={current ? 'page' : undefined}
+            aria-current={isCurrent ? 'page' : undefined}
             className={styles.BreadcrumbLink}
             itemProp="item"
             href={href}

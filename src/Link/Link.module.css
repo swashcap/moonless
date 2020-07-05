@@ -1,0 +1,18 @@
+/* Link */
+
+.Link {
+  color: var(--color-purple-200);
+  text-decoration: underline;
+}
+
+.Link:hover,
+:global(.storybook-hover).Link {
+  color: var(--color-purple-100);
+}
+
+.Link:focus,
+:global(.storybook-focus).Link,
+.Link:active,
+:global(.storybook-active).Link {
+  color: var(--color-white);
+}

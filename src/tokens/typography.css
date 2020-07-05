@@ -1,4 +1,8 @@
 :root {
   --typography-font-size-100: 75%;
   --typography-line-height-100: 1.25;
+  --typography-font-size-200: 100%;
+  --typography-line-height-200: 1.5;
+  --typography-font-size-300: 112.5%;
+  --typography-line-height-300: 1.5;
 }

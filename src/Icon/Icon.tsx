@@ -26,6 +26,12 @@ export const CheckIcon: React.FC<IconProps> = (props) => (
   </Icon>
 );
 
+export const MinusIcon: React.FC<IconProps> = (props) => (
+  <Icon {...props}>
+    <path stroke="currentColor" stroke-linecap="round" d="M2 6h8" />
+  </Icon>
+);
+
 export const XIcon: React.FC<IconProps> = (props) => (
   <Icon {...props}>
     <path stroke="currentColor" strokeLinecap="round" d="M3 3l6 6M3 9l6-6" />

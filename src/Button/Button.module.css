@@ -2,13 +2,9 @@
 
 .Button {
   border-style: solid;
-  border-width: 1px;
   cursor: pointer;
   font-family: inherit;
-  font-size: 100%;
-  line-height: inherit;
   margin: 0;
-  padding: 1em;
 }
 
 .Button[disabled] {
@@ -18,36 +14,85 @@
 /* Button: primary */
 
 .ButtonPrimary {
-  background: navy;
-  border-color: transparent;
-  color: white;
+  background: var(--theme-color-primary-background);
+  border-color: var(--theme-color-primary-border);
+  color: var(--theme-color-primary-text);
 }
 
-/* stylelint-disable no-duplicate-selectors */
+.ButtonPrimary:hover,
+:global(.storybook-hover).ButtonPrimary {
+  background: var(--theme-color-primary-hover-background);
+  border-color: var(--theme-color-primary-hover-border);
+  color: var(--theme-color-primary-hover-text);
+}
+
 .ButtonPrimary:focus,
-:global(.storybook-focus).ButtonPrimary {
-  background: blue;
+:global(.storybook-focus).ButtonPrimary,
+.ButtonPrimary:active,
+:global(.storybook-active).ButtonPrimary {
+  background: var(--theme-color-primary-active-background);
+  border-color: var(--theme-color-primary-active-border);
+  color: var(--theme-color-primary-active-text);
 }
-
-.ButtonPrimary:hover,
-:global(.storybook-hover).ButtonPrimary {
-  background: royalblue;
-}
-
-.ButtonPrimary:hover,
-:global(.storybook-hover).ButtonPrimary {
-  background: lightblue;
-}
-/* stylelint-enable no-duplicate-selectors */
 
 .ButtonPrimary[disabled] {
-  background: gray;
+  background: var(--theme-color-primary-disabled-background);
+  border-color: var(--theme-color-primary-disabled-border);
+  color: var(--theme-color-primary-disabled-text);
 }
 
 /* Button: secondary */
 
 .ButtonSecondary {
-  background: white;
-  border-color: navy;
-  color: navy;
+  background: var(--theme-color-secondary-background);
+  border-color: var(--theme-color-secondary-border);
+  color: var(--theme-color-secondary-text);
+}
+
+.ButtonSecondary:hover,
+:global(.storybook-hover).ButtonSecondary {
+  background: var(--theme-color-secondary-hover-background);
+  border-color: var(--theme-color-secondary-hover-border);
+  color: var(--theme-color-secondary-hover-text);
+}
+
+.ButtonSecondary:focus,
+:global(.storybook-focus).ButtonSecondary,
+.ButtonSecondary:active,
+:global(.storybook-active).ButtonSecondary {
+  background: var(--theme-color-secondary-active-background);
+  border-color: var(--theme-color-secondary-active-border);
+  color: var(--theme-color-secondary-active-text);
+}
+
+.ButtonSecondary[disabled] {
+  background: var(--theme-color-secondary-disabled-background);
+  border-color: var(--theme-color-secondary-disabled-border);
+  color: var(--theme-color-secondary-disabled-text);
+}
+
+/** Button: Size */
+
+.ButtonSmall {
+  border-radius: var(--theme-size-small-border-radius);
+  border-width: var(--theme-size-small-border-width);
+  font-size: var(--theme-size-small-font-size);
+  line-height: var(--theme-size-small-line-height);
+  padding: var(--theme-size-small-padding);
+}
+
+.ButtonMedium {
+  border-radius: var(--theme-size-medium-border-radius);
+  border-width: var(--theme-size-medium-border-width);
+  font-size: var(--theme-size-medium-font-size);
+  line-height: var(--theme-size-medium-line-height);
+  padding: var(--theme-size-medium-padding);
+}
+
+.ButtonLarge {
+  border-radius: var(--theme-size-large-border-radius);
+  border-width: var(--theme-size-large-border-width);
+  font-size: var(--theme-size-large-font-size);
+  line-height: var(--theme-size-large-line-height);
+  padding: var(--theme-size-large-padding);
 }

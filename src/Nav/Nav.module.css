@@ -1,10 +1,5 @@
 /** Nav */
 
-.Nav {
-  background: var(--color-blue);
-  color: var(--color-white);
-}
-
 /** Nav: List */
 
 .NavList {
@@ -17,8 +12,37 @@
 /** Nav: Link */
 
 .NavLink {
-  color: inherit;
+  color: var(--theme-color-secondary-text);
   display: inline-block;
-  padding: var(--space-100);
+  padding: var(--theme-size-medium-padding);
   text-decoration: none;
+}
+
+.NavLink:hover {
+  background: var(--theme-color-secondary-hover-background);
+  color: var(--theme-color-secondary-hover-text);
+}
+
+.NavLink:focus,
+.NavLink:active {
+  background: var(--theme-color-secondary-active-background);
+  color: var(--theme-color-secondary-active-text);
+}
+
+/** Nav: Link: Current */
+
+.NavLinkCurrent {
+  background: var(--theme-color-primary-background);
+  color: var(--theme-color-primary-text);
+}
+
+.NavLinkCurrent:hover {
+  background: var(--theme-color-primary-hover-background);
+  color: var(--theme-color-primary-hover-text);
+}
+
+.NavLinkCurrent:focus,
+.NavLinkCurrent:active {
+  background: var(--theme-color-primary-active-background);
+  color: var(--theme-color-primary-active-text);
 }

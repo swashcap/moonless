@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { clsx } from '../utils/clsx';
-import './Link.css';
+import styles from './Link.module.css';
 
 export type LinkProps = React.DetailedHTMLProps<
   React.AnchorHTMLAttributes<HTMLAnchorElement>,
@@ -9,7 +9,7 @@ export type LinkProps = React.DetailedHTMLProps<
 >;
 
 export const Link: React.FC<LinkProps> = ({ children, className, ...rest }) => (
-  <a className={clsx('Link', className)} {...rest}>
+  <a className={clsx(styles.Link, className)} {...rest}>
     {children}
   </a>
 );

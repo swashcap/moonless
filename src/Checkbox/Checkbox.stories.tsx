@@ -9,21 +9,34 @@ export default {
 
 export const Default = () => <Checkbox />;
 
-export const Checked = () => {
-  const [checked, setChecked] = React.useState(true);
-
-  return <Checkbox checked={checked} onChange={() => setChecked(!checked)} />;
-};
-
-export const Disabled = () => (
+export const NotChecked = () => (
   <>
-    <Checkbox disabled />
-    <Checkbox className="storybook-focus" disabled />
-    <Checkbox className="storybook-hover" disabled />
-    <Checkbox className="storybook-active" disabled />
+    <Checkbox label="Default" />
+    <Checkbox className="storybook-focus" label="Focus" />
+    <Checkbox className="storybook-hover" label="Hover" />
+    <Checkbox className="storybook-active" label="Active" />
+    <Checkbox disabled label="Disabled" />
   </>
 );
 
-export const WithError = () => <Checkbox error="Error" />;
+export const Checked = () => (
+  <>
+    <Checkbox checked label="Checked" />
+    <Checkbox checked className="storybook-focus" label="Focus" />
+    <Checkbox checked className="storybook-hover" label="Hover" />
+    <Checkbox checked className="storybook-active" label="Active" />
+    <Checkbox checked disabled label="Disabled" />
+  </>
+);
 
-export const WithLabel = () => <Checkbox label="Label" />;
+export const Indeterminate = () => (
+  <>
+    <Checkbox indeterminate label="Indeterminate" />
+    <Checkbox className="storybook-focus" indeterminate label="Focus" />
+    <Checkbox className="storybook-hover" indeterminate label="Hover" />
+    <Checkbox className="storybook-active" indeterminate label="Active" />
+    <Checkbox disabled indeterminate label="Disabled" />
+  </>
+);
+
+export const WithError = () => <Checkbox error="This is an error" label="Label" />;

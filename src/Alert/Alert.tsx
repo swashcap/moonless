@@ -39,7 +39,7 @@ export class Alert extends React.Component<AlertProps> {
           variant === 'error' && styles.AlertError,
           variant === 'success' && styles.AlertSuccess,
           variant === 'warning' && styles.AlertWarning,
-
+          onClose && styles.AlertOnClose,
           className
         )}
         {...rest}
