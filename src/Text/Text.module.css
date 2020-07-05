@@ -1,0 +1,70 @@
+/** Text */
+
+.Text {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+/** Text: Title */
+
+.TextTitle {
+  font-size: var(--typography-font-size-600);
+  font-weight: var(--typography-font-weight-normal);
+  line-height: var(--typography-line-height-600);
+}
+
+/** Text: Headline 1 */
+
+.TextHeadline1 {
+  font-size: var(--typography-font-size-500);
+  font-weight: var(--typography-font-weight-normal);
+  line-height: var(--typography-line-height-500);
+}
+
+/** Text: Headline 2 */
+
+.TextHeadline2 {
+  font-size: var(--typography-font-size-400);
+  font-weight: var(--typography-font-weight-normal);
+  line-height: var(--typography-line-height-400);
+}
+
+/** Text: Headline 3 */
+
+.TextHeadline3 {
+  font-size: var(--typography-font-size-300);
+  font-weight: var(--typography-font-weight-normal);
+  line-height: var(--typography-line-height-300);
+}
+
+/** Text: Subhead 1 */
+
+.TextSubhead1 {
+  font-size: var(--typography-font-size-200);
+  font-weight: var(--typography-font-weight-bold);
+  line-height: var(--typography-line-height-200);
+}
+
+/** Text: Subhead 2 */
+
+.TextSubhead2 {
+  font-size: var(--typography-font-size-100);
+  font-weight: var(--typography-font-weight-bold);
+  line-height: var(--typography-line-height-100);
+}
+
+/** Text: Body */
+
+.TextBody {
+  font-size: var(--typography-font-size-200);
+  font-weight: var(--typography-font-weight-normal);
+  line-height: var(--typography-line-height-200);
+}
+
+/** Text: Caption */
+
+.TextCaption {
+  font-size: var(--typography-font-size-100);
+  font-weight: var(--typography-font-weight-normal);
+  line-height: var(--typography-line-height-100);
+}

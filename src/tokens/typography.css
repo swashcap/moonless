@@ -1,8 +1,18 @@
 :root {
-  --typography-font-size-100: 75%;
-  --typography-line-height-100: 1.25;
+  --typography-font-size-50: 75%;
+  --typography-font-size-100: 87.5%;
   --typography-font-size-200: 100%;
-  --typography-line-height-200: 1.5;
   --typography-font-size-300: 112.5%;
+  --typography-font-size-400: 125%;
+  --typography-font-size-500: 150%;
+  --typography-font-size-600: 225%;
+  --typography-font-weight-normal: 400;
+  --typography-font-weight-bold: 600;
+  --typography-line-height-50: 1.25;
+  --typography-line-height-100: 1.5;
+  --typography-line-height-200: 1.5;
   --typography-line-height-300: 1.5;
+  --typography-line-height-400: 1.5;
+  --typography-line-height-500: 1.5;
+  --typography-line-height-600: 1.2;
 }
