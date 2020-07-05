@@ -10,6 +10,7 @@
 /** Breadcrumb: List: Item */
 
 .BreadcrumbListItem::after {
+  color: var(--theme-color-text-secondary);
   content: '/';
   display: inline-block;
 }
@@ -23,7 +24,7 @@
 
 .BreadcrumbLink {
   display: inline-block;
-  padding: var(--spacing-100);
+  padding: var(--space-50);
 }
 
 .BreadcrumbLink[aria-current] {

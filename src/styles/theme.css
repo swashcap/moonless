@@ -50,28 +50,35 @@
   --theme-color-warning-text: var(--color-black);
   --theme-color-background: var(--color-gray-700);
   --theme-color-text: var(--color-gray-200);
-  --theme-color-text-secondary: var(--color-gray-300);
+  --theme-color-text-secondary: var(--color-gray-400);
 
   /** Styles: Theme: Size */
+
+  /** X-Small */
+  --theme-size-xsmall-border-radius: 0.25rem;
+  --theme-size-xsmall-border-width: 1px;
+  --theme-size-xsmall-font-size: var(--typography-font-size-50);
+  --theme-size-xsmall-line-height: var(--typography-line-height-50);
+  --theme-size-xsmall-padding: var(--space-50) var(--space-100);
 
   /** Small */
   --theme-size-small-border-radius: 0.25rem;
   --theme-size-small-border-width: 1px;
   --theme-size-small-font-size: var(--typography-font-size-100);
   --theme-size-small-line-height: var(--typography-line-height-100);
-  --theme-size-small-padding: var(--space-100);
+  --theme-size-small-padding: var(--space-50);
 
   /** Medium */
   --theme-size-medium-border-radius: 0.5rem;
   --theme-size-medium-border-width: 1px;
   --theme-size-medium-font-size: var(--typography-font-size-200);
   --theme-size-medium-line-height: var(--typography-line-height-200);
-  --theme-size-medium-padding: var(--space-200);
+  --theme-size-medium-padding: var(--space-50) var(--space-100);
 
   /** Large */
   --theme-size-large-border-radius: 0.667rem;
   --theme-size-large-border-width: 1px;
   --theme-size-large-font-size: var(--typography-font-size-300);
   --theme-size-large-line-height: var(--typography-line-height-300);
-  --theme-size-large-padding: var(--space-300);
+  --theme-size-large-padding: var(--space-100) var(--space-200);
 }

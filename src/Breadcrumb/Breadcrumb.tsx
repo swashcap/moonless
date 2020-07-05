@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './Breadcrumb.module.css';
+import { Link } from '../Link/Link';
 
 export interface BreadcrumbProps
   extends React.DetailedHTMLProps<
@@ -35,14 +36,14 @@ export const Breadcrumb: React.FC<BreadcrumbProps> = ({
           itemType="http://schema.org/ListItem"
           key={href}
         >
-          <a
+          <Link
             aria-current={isCurrent ? 'page' : undefined}
             className={styles.BreadcrumbLink}
             itemProp="item"
             href={href}
           >
             <span itemProp="name">{name}</span>
-          </a>
+          </Link>
           <meta itemProp="position" content={(index + 1).toString()} />
         </li>
       ))}

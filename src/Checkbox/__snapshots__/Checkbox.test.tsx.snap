@@ -2,9 +2,7 @@
 
 exports[`Checkbox It should render. 1`] = `
 <div>
-  <div
-    class="Checkbox"
-  >
+  <div>
     <label
       class="CheckboxLabel"
       for="checkbox-1"
@@ -15,11 +13,11 @@ exports[`Checkbox It should render. 1`] = `
         type="checkbox"
       />
       <span
+        aria-hidden="true"
         class="CheckboxIndicator"
       >
         <svg
-          aria-hidden="true"
-          class="Icon"
+          class="Icon CheckboxIndicatorIcon"
           viewBox="0 0 12 12"
           xmlns="http://www.w3.org/2000/svg"
         >

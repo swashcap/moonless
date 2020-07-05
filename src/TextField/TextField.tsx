@@ -9,6 +9,7 @@ export interface TextFieldProps
     React.HTMLAttributes<HTMLDivElement>,
     HTMLDivElement
   > {
+  disabled?: boolean;
   error?: React.ReactNode;
   id?: string;
   label?: React.ReactNode;
@@ -17,7 +18,7 @@ export interface TextFieldProps
 }
 
 export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
-  ({ error, label, id: idProp, onChange, value, ...rest }, ref) => {
+  ({ disabled, error, label, id: idProp, onChange, value, ...rest }, ref) => {
     const fallbackId = useId('text-field-');
     const errorId = useId('text-field-error-');
 
@@ -34,6 +35,7 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
           aria-describedby={error ? errorId : undefined}
           aria-invalid={error ? 'true' : undefined}
           className={styles.TextFieldInput}
+          disabled={disabled}
           id={id}
           onChange={onChange}
           ref={ref}

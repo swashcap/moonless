@@ -2,9 +2,7 @@
 
 exports[`Breadcrumb It should render. 1`] = `
 <div>
-  <nav
-    class="Breadcrumb"
-  >
+  <nav>
     <ol
       class="BreadcrumbList"
       itemscope=""
@@ -17,7 +15,7 @@ exports[`Breadcrumb It should render. 1`] = `
         itemtype="http://schema.org/ListItem"
       >
         <a
-          class="BreadcrumbLink"
+          class="Link BreadcrumbLink"
           href="/"
           itemprop="item"
         >

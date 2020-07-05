@@ -1,8 +1,17 @@
 {
   "compilerOptions": {
+    "declaration": true,
+    "emitDeclarationOnly": true,
     "esModuleInterop": true,
     "jsx": "react",
-    "plugins": [{ "name": "typescript-plugin-css-modules" }],
+    "outFile": "dist/index.js",
+    "plugins": [{
+      "name": "typescript-plugin-css-modules"
+    }],
     "strict": true
-  }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ]
 }

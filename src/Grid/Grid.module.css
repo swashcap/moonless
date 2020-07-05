@@ -1,3 +1,5 @@
+/** Grid */
+
 .Grid {
   display: flex;
   flex-wrap: wrap;
@@ -5,8 +7,58 @@
   margin-right: calc(-1 * var(--spacing-100));
 }
 
+/** Grid: Col */
+
 .GridCol {
   flex: 1;
   padding-left: var(--spacing-100);
   padding-right: var(--spacing-100);
+}
+
+.GridCol1 {
+  width: 8.333%;
+}
+
+.GridCol2 {
+  width: 16.66%;
+}
+
+.GridCol3 {
+  width: 25%;
+}
+
+.GridCol4 {
+  width: 33.33%;
+}
+
+.GridCol5 {
+  width: 41.66%;
+}
+
+.GridCol6 {
+  width: 50%;
+}
+
+.GridCol7 {
+  width: 58.33%;
+}
+
+.GridCol8 {
+  width: 66.66%;
+}
+
+.GridCol9 {
+  width: 75%;
+}
+
+.GridCol10 {
+  width: 83.33%;
+}
+
+.GridCol11 {
+  width: 91.66%;
+}
+
+.GridCol12 {
+  width: 100%;
 }

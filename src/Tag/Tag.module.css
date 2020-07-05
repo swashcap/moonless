@@ -1,11 +1,11 @@
 .Tag {
-  border-width: var(--theme-size-small-border-width);
-  border-radius: var(--theme-size-small-border-radius);
+  border-width: var(--theme-size-xsmall-border-width);
+  border-radius: var(--theme-size-xsmall-border-radius);
   border-style: solid;
   display: inline-block;
-  font-size: var(--theme-size-small-font-size);
-  line-height: var(--theme-size-small-line-height);
-  padding: var(--theme-size-small-padding);
+  font-size: var(--theme-size-xsmall-font-size);
+  line-height: var(--theme-size-xsmall-line-height);
+  padding: var(--theme-size-xsmall-padding);
 }
 
 /* Variant */

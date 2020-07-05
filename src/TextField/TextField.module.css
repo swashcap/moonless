@@ -8,12 +8,34 @@
 /** TextField: Input */
 
 .TextFieldInput {
-  background: var(--color-white);
-  border: 1px solid var(--color-gray);
-  color: var(--color-black);
+  background: var(--color-gray-600);
+  border: 1px solid var(--color-gray-400);
+  color: var(--color-white);
   font: inherit;
   padding: var(--space-100);
   width: 100%;
+}
+
+.TextFieldInput:hover,
+:global(.storybook-focus) .TextFieldInput {
+  background: var(--color-gray-700);
+  border-color: var(--color-gray-300);
+}
+
+.TextFieldInput:focus,
+:global(.storybook-focus) .TextFieldInput,
+.TextFieldInput:active,
+:global(.storybook-active) .TextFieldInput {
+  background: var(--color-gray-700);
+  border-color: var(--color-gray-300);
+}
+
+/** TextField: Input: Disabled */
+
+.TextFieldInput[disabled] {
+  background: var(--color-gray-500);
+  border-color: var(--color-gray-500);
+  color: var(--color-gray-200);
 }
 
 /** TextField: Error */

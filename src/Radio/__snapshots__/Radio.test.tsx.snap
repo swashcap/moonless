@@ -2,12 +2,21 @@
 
 exports[`Radio It should render. 1`] = `
 <div>
-  <div
-    class="Radio"
-  >
-    <input
-      type="radio"
-    />
+  <div>
+    <label
+      class="RadioLabel"
+      for="checkbox-1"
+    >
+      <input
+        class="VisuallyHidden"
+        id="checkbox-1"
+        type="radio"
+      />
+      <span
+        aria-hidden="true"
+        class="RadioIndicator"
+      />
+    </label>
   </div>
 </div>
 `;

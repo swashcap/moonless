@@ -2,9 +2,7 @@
 
 exports[`Nav It should render. 1`] = `
 <div>
-  <nav
-    class="Nav"
-  >
+  <nav>
     <ul
       class="NavList"
     />
