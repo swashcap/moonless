@@ -1,18 +1,44 @@
 import React from 'react';
 
 import styles from './Radio.module.css';
+import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden.module.css';
+import { useId } from '../utils/useId';
 
-type RadioProps = React.DetailedHTMLProps<
-  React.ButtonHTMLAttributes<HTMLDivElement>,
-  HTMLDivElement
->;
+export interface RadioProps
+  extends React.DetailedHTMLProps<
+    React.ButtonHTMLAttributes<HTMLDivElement>,
+    HTMLDivElement
+  > {
+  checked?: boolean;
+  disabled?: boolean;
+  id?: string;
+  label?: React.ReactNode;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => any;
+}
 
 export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
-  ({ ...rest }, ref) => (
-    <div {...rest}>
-      <label className={styles.RadioLabel}>
-        <input ref={ref} type="radio" />
-      </label>
-    </div>
-  )
+  ({ checked, disabled, id: idProp, label, onChange, ...rest }, ref) => {
+    const fallbackId = useId('checkbox-');
+    const errorId = useId('checkbox-error-');
+
+    const id = idProp ?? fallbackId;
+
+    return (
+      <div {...rest}>
+        <label className={styles.RadioLabel} htmlFor={id}>
+          <input
+            checked={checked}
+            className={VisuallyHidden}
+            disabled={disabled}
+            id={id}
+            onChange={onChange}
+            ref={ref}
+            type="radio"
+          />
+          <span aria-hidden="true" className={styles.RadioIndicator} />
+          {label}
+        </label>
+      </div>
+    );
+  }
 );
