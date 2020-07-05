@@ -3,7 +3,7 @@ import React from 'react';
 import { CheckIcon, MinusIcon, XIcon } from './Icon';
 
 export default {
-  title: 'Icon',
+  title: 'Component|Icon',
 };
 
 export const Check = () => <CheckIcon />;

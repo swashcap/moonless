@@ -4,7 +4,7 @@ import { Checkbox } from './Checkbox';
 
 export default {
   component: Checkbox,
-  title: 'Checkbox',
+  title: 'Component|Checkbox',
 };
 
 export const Default = () => <Checkbox />;
@@ -39,4 +39,6 @@ export const Indeterminate = () => (
   </>
 );
 
-export const WithError = () => <Checkbox error="This is an error" label="Label" />;
+export const WithError = () => (
+  <Checkbox error="This is an error" label="Label" />
+);

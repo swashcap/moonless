@@ -4,7 +4,7 @@ import { Link } from './Link';
 
 export default {
   component: Link,
-  title: 'Link',
+  title: 'Component|Link',
 };
 
 export const Default = () => (

@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react';
 
 import styles from './Checkbox.module.css';
 import { CheckIcon, MinusIcon } from '../Icon/Icon';
+import { ControlError } from '../private/ControlError/ControlError';
 import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden.module.css';
 import { useId } from '../utils/useId';
 
@@ -39,10 +40,12 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
 
     useEffect(() => {
       if (
-        localRef.current && localRef.current.indeterminate !== indeterminate) {
+        localRef.current &&
+        localRef.current.indeterminate !== indeterminate
+      ) {
         localRef.current.indeterminate = !!indeterminate;
       }
-    }, [indeterminate, localRef])
+    }, [indeterminate, localRef]);
 
     const id = idProp ?? fallbackId;
 
@@ -78,9 +81,9 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
           {label}
         </label>
         {!!error && (
-          <span className={styles.CheckboxError} id={errorId}>
+          <ControlError className={styles.CheckboxError} id={errorId}>
             {error}
-          </span>
+          </ControlError>
         )}
       </div>
     );

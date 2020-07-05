@@ -92,9 +92,5 @@ input[disabled]:checked ~ .CheckboxIndicator {
 /** Checkbox: Error */
 
 .CheckboxError {
-  background: var(--theme-color-error-background);
-  color: var(--theme-color-error-text);
-  font-size: var(--theme-size-small-font-size);
-  line-height: var(--typography-size-small-line-height);
   margin-top: var(--space-100);
 }

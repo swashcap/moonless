@@ -1,6 +1,7 @@
 import React from 'react';
 
 import styles from './TextField.module.css';
+import { ControlError } from '../private/ControlError/ControlError';
 import { useId } from '../utils/useId';
 
 export interface TextFieldProps
@@ -39,9 +40,9 @@ export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
           value={value}
         />
         {error && (
-          <span className={styles.TextFieldError} id={errorId}>
+          <ControlError className={styles.TextFieldError} id={errorId}>
             {error}
-          </span>
+          </ControlError>
         )}
       </div>
     );

@@ -4,7 +4,7 @@ import { Breadcrumb } from './Breadcrumb';
 
 export default {
   component: Breadcrumb,
-  title: 'Breadcrumb',
+  title: 'Component|Breadcrumb',
 };
 
 export const Default = () => (

@@ -4,7 +4,7 @@ import { Radio } from './Radio';
 
 export default {
   component: Radio,
-  title: 'Radio',
+  title: 'Component|Radio',
 };
 
 export const Default = () => <Radio />;
