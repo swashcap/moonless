@@ -8,8 +8,6 @@ export type CardProps = React.DetailedHTMLProps<
   HTMLDivElement
 >;
 
-export const Card: React.FC<CardProps> = ({ children, className, ...rest }) => (
-  <div className={clsx(styles.Card, className)} {...rest}>
-    {children}
-  </div>
+export const Card: React.FC<CardProps> = ({ className, ...rest }) => (
+  <div className={clsx(styles.Card, className)} {...rest} />
 );
