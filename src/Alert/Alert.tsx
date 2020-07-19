@@ -42,6 +42,7 @@ export class Alert extends React.Component<AlertProps> {
           onClose && styles.AlertOnClose,
           className
         )}
+        role="alert"
         {...rest}
       >
         {children}
