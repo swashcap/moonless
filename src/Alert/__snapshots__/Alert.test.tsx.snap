@@ -4,6 +4,7 @@ exports[`Alert It should render. 1`] = `
 <div>
   <div
     class="Alert AlertWarning"
+    role="alert"
   >
     Alert
   </div>
