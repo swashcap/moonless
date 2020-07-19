@@ -7,30 +7,7 @@ exports[`Breadcrumb It should render. 1`] = `
       class="BreadcrumbList"
       itemscope=""
       itemtype="http://schema.org/BreadcrumbList"
-    >
-      <li
-        class="BreadcrumbListItem"
-        itemprop="itemListElement"
-        itemscope=""
-        itemtype="http://schema.org/ListItem"
-      >
-        <a
-          class="Link BreadcrumbLink"
-          href="/"
-          itemprop="item"
-        >
-          <span
-            itemprop="name"
-          >
-            Home
-          </span>
-        </a>
-        <meta
-          content="1"
-          itemprop="position"
-        />
-      </li>
-    </ol>
+    />
   </nav>
 </div>
 `;
