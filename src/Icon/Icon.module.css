@@ -3,3 +3,19 @@
   height: 1.5rem;
   width: 1.5rem;
 }
+
+.fillCurrentColor {
+  fill: currentColor;
+}
+
+.fillNone {
+  fill: none;
+}
+
+.strokeCurrentColor {
+  stroke: currentColor;
+}
+
+.strokeNone {
+  stroke: none;
+}

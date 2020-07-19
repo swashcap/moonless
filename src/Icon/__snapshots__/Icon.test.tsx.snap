@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Icon CheckIcon It should render. 1`] = `
+exports[`Icon [Function: ArrowDownIcon] { [length]: 1, [name]: 'ArrowDownIcon' } It should render. 1`] = `
 <div>
   <svg
     class="Icon"
@@ -8,17 +8,14 @@ exports[`Icon CheckIcon It should render. 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
-      d="M2.5 6.5l2.5 3 4.5-6"
-      fill="none"
-      stroke="currentColor"
-      stroke-linecap="round"
-      stroke-linejoin="round"
+      class="fillNone strokeCurrentColor"
+      d="M6 3v6M2.5 6.5l3.5 3 3.5-3"
     />
   </svg>
 </div>
 `;
 
-exports[`Icon XIcon It should render. 1`] = `
+exports[`Icon [Function: ArrowLeftIcon] { [length]: 1, [name]: 'ArrowLeftIcon' } It should render. 1`] = `
 <div>
   <svg
     class="Icon"
@@ -26,9 +23,355 @@ exports[`Icon XIcon It should render. 1`] = `
     xmlns="http://www.w3.org/2000/svg"
   >
     <path
+      class="fillNone strokeCurrentColor"
+      d="M3 6h6M5.5 2.5L2.5 6l3 3.5"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: ArrowRightIcon] { [length]: 1, [name]: 'ArrowRightIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M3 6h6M6.5 2.5l3 3.5-3 3.5"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: ArrowUpIcon] { [length]: 1, [name]: 'ArrowUpIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M6 3v6M2.5 5.5l3.5-3 3.5 3"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: CaretDownIcon] { [length]: 1, [name]: 'CaretDownIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M3 5l3 3 3-3"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: CaretLeftIcon] { [length]: 1, [name]: 'CaretLeftIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M7 3L4 6l3 3"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: CaretRightIcon] { [length]: 1, [name]: 'CaretRightIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M5 3l3 3-3 3"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: CaretUpIcon] { [length]: 1, [name]: 'CaretUpIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M3 7l3-3 3 3"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: CheckIcon] { [length]: 1, [name]: 'CheckIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M2.5 6.5l2.5 3 4.5-6"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: ClearIcon] { [length]: 1, [name]: 'ClearIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      class="strokeCurrentColor"
+    >
+      <circle
+        class="fillNone"
+        cx="6"
+        cy="6"
+        r="5.625"
+        stroke-width=".75"
+      />
+      <path
+        d="M3.5 3.5l5 5M3.5 8.5l5-5"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: EditIcon] { [length]: 1, [name]: 'EditIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      class="fillNone strokeCurrentColor"
+      stroke-width=".75"
+      transform="rotate(45 6 6)"
+    >
+      <path
+        d="M7.375 3.375h-2.75v5.984L6 10.931l1.375-1.572V3.375z"
+      />
+      <rect
+        height="2.25"
+        rx="1"
+        width="2.75"
+        x="4.625"
+        y="1.125"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: InfoIcon] { [length]: 1, [name]: 'InfoIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      class="fillNone strokeCurrentColor"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="5.625"
+        stroke-width=".75"
+      />
+      <circle
+        class="fillCurrentColor strokeNone"
+        cx="5.75"
+        cy="3.25"
+        r="1"
+      />
+      <path
+        d="M5 5.5h1v4h1.5-3"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: MapPinIcon] { [length]: 1, [name]: 'MapPinIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M6 1.875c-.772 0-1.471.313-1.977.819a2.796 2.796 0 00-.443 3.378L6 10.252l2.42-4.18c.387-.668.466-1.43.282-2.121A2.796 2.796 0 006 1.875z"
+      stroke-width=".75"
+    />
+    <circle
+      class="fillCurrentColor"
+      cx="6"
+      cy="4.75"
+      r="1"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: MenuIcon] { [length]: 1, [name]: 'MenuIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="strokeCurrentColor"
+      d="M2.5 3h7M2.5 5.5h7M2.5 8h7"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: MinusIcon] { [length]: 1, [name]: 'MinusIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="strokeCurrentColor"
+      d="M2 6h8"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: PlusIcon] { [length]: 1, [name]: 'PlusIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="strokeCurrentColor"
+      d="M6 2v8M2 6h8"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: SuccessIcon] { [length]: 1, [name]: 'SuccessIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      class="fillNone strokeCurrentColor"
+    >
+      <circle
+        cx="6"
+        cy="6"
+        r="5.625"
+        stroke-width=".75"
+      />
+      <path
+        d="M3.5 6.5l2 3 4-5.5"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: TagIcon] { [length]: 1, [name]: 'TagIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="fillNone strokeCurrentColor"
+      d="M1 6l3-3h6v6H4z"
+      stroke-width=".75"
+    />
+    <circle
+      class="fillCurrentColor"
+      cx="4.25"
+      cy="6"
+      r="1"
+    />
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: WarningIcon] { [length]: 1, [name]: 'WarningIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <g
+      class="fillCurrentColor"
+    >
+      <rect
+        height="3.5"
+        rx=".5"
+        width="1"
+        x="5.5"
+        y="5"
+      />
+      <circle
+        cx="6"
+        cy="9.5"
+        r=".5"
+      />
+      <path
+        class="fillNone strokeCurrentColor"
+        d="M1 11h10L6 2z"
+        stroke-width=".75"
+      />
+    </g>
+  </svg>
+</div>
+`;
+
+exports[`Icon [Function: XIcon] { [length]: 1, [name]: 'XIcon' } It should render. 1`] = `
+<div>
+  <svg
+    class="Icon"
+    viewBox="0 0 12 12"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <path
+      class="strokeCurrentColor"
       d="M3 3l6 6M3 9l6-6"
-      stroke="currentColor"
-      stroke-linecap="round"
     />
   </svg>
 </div>
