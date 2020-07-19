@@ -1,22 +1,49 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import { PrimaryButton, SecondaryButton } from './Button';
+import { ButtonSize, PrimaryButton, SecondaryButton } from './Button';
 
 describe('Button', () => {
-  describe('PrimaryButton', () => {
+  describe.each([
+    ['PrimaryButton', PrimaryButton],
+    ['SecondaryButton', SecondaryButton],
+  ])('%s', (name, Component) => {
     test('It should render.', () => {
-      const { container } = render(<PrimaryButton>Button</PrimaryButton>);
+      const { container } = render(<Component>Button</Component>);
 
       expect(container).toMatchSnapshot();
     });
-  });
 
-  describe('SecondaryButton', () => {
-    test('It should render.', () => {
-      const { container } = render(<SecondaryButton>Button</SecondaryButton>);
+    test('It should spread properties to the root element', () => {
+      const { getByRole } = render(
+        <Component className="test1" data-testid="test2">
+          Test 3
+        </Component>
+      );
 
-      expect(container).toMatchSnapshot();
+      const button = getByRole('button');
+
+      expect(button).toHaveClass('test1');
+      expect(button).toHaveAttribute('data-testid', 'test2');
+      expect(button.textContent).toBe('Test 3');
+    });
+
+    test.each<ButtonSize>(['small', 'medium', 'large'])(
+      'It should render size %s.',
+      (size) => {
+        const { getByRole } = render(<Component size={size}>Button</Component>);
+
+        expect(getByRole('button')).toHaveClass(
+          `Button${size.replace(/(\w)/, (x) => x.toUpperCase())}`
+        );
+      }
+    );
+
+    test('It should forward ref.', () => {
+      const ref = React.createRef<HTMLButtonElement>();
+      const { getByRole } = render(<Component ref={ref}>Button</Component>);
+
+      expect(getByRole('button')).toBe(ref.current);
     });
   });
 });
