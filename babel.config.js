@@ -5,6 +5,7 @@ module.exports = {
       presets: [['@babel/preset-env', { targets: { node: 'current' } }]],
     },
   },
+  extends: ['plugin:jsx-a11y/recommended'],
   presets: [
     ['@babel/preset-env', { modules: false }],
     '@babel/preset-react',
@@ -15,5 +16,6 @@ module.exports = {
     '@babel/plugin-proposal-nullish-coalescing-operator',
     '@babel/plugin-proposal-optional-chaining',
     '@babel/plugin-transform-runtime',
+    'jsx-a11y',
   ],
 };

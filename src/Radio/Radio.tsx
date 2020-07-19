@@ -19,7 +19,6 @@ export interface RadioProps
 export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
   ({ checked, disabled, id: idProp, label, onChange, ...rest }, ref) => {
     const fallbackId = useId('checkbox-');
-    const errorId = useId('checkbox-error-');
 
     const id = idProp ?? fallbackId;
 

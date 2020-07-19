@@ -3,10 +3,7 @@ const path = require('path');
 
 module.exports = {
   addons: ['@storybook/preset-typescript', '@storybook/addon-docs'],
-  stories: [
-    './stories/**.tsx',
-    '../src/**/*.stories.tsx'
-  ],
+  stories: ['./stories/**.tsx', '../src/**/*.stories.tsx'],
   /**
    * Customize Webpack config.
    * {@link https://storybook.js.org/docs/configurations/custom-webpack-config/}
