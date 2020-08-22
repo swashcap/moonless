@@ -3,7 +3,7 @@ import React from 'react';
 import { PrimaryButton, SecondaryButton } from './Button';
 
 export default {
-  title: 'Component|Button',
+  title: 'Component/Button',
 };
 
 export const Primary = () => (

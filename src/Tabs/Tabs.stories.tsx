@@ -4,7 +4,7 @@ import { Tabs } from './Tabs';
 
 export default {
   component: Tabs,
-  title: 'Component|Tabs',
+  title: 'Component/Tabs',
 };
 
 export const Default = () => <Tabs onChange={console.log} items={[]} />;

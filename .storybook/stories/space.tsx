@@ -3,7 +3,7 @@ import React from 'react';
 import { Text } from '../../src';
 
 export default {
-  title: 'Design|Space',
+  title: 'Design/Space',
 };
 
 const Space: React.FC<{ value: string }> = ({ value }) => (

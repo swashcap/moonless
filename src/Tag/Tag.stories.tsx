@@ -4,7 +4,7 @@ import { Tag } from './Tag';
 
 export default {
   component: Tag,
-  title: 'Component|Tag',
+  title: 'Component/Tag',
 };
 
 export const Default = () => <Tag>Tag</Tag>;

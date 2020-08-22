@@ -4,7 +4,7 @@ import { Grid } from './Grid';
 
 export default {
   component: Grid,
-  title: 'Component|Grid',
+  title: 'Component/Grid',
 };
 
 export const Default = () => (

@@ -4,7 +4,7 @@ import { A11YLive } from './A11YLive';
 
 export default {
   component: A11YLive,
-  title: 'Private|A11YLive',
+  title: 'Private/A11YLive',
 };
 
 export const Default = () => <A11YLive />;

@@ -2,7 +2,7 @@
 const path = require('path');
 
 module.exports = {
-  addons: ['@storybook/preset-typescript', '@storybook/addon-docs'],
+  addons: ['@storybook/addon-docs'],
   stories: ['./stories/**/*.tsx', '../src/**/*.stories.tsx'],
   /**
    * Customize Webpack config.

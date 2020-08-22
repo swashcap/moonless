@@ -3,7 +3,7 @@ import React from 'react';
 import { Text } from './Text';
 
 export default {
-  title: 'Component|Text',
+  title: 'Component/Text',
 };
 
 export const Default = () => <Text>Text</Text>;

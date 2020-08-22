@@ -4,7 +4,7 @@ import { Checkbox } from './Checkbox';
 
 export default {
   component: Checkbox,
-  title: 'Component|Checkbox',
+  title: 'Component/Checkbox',
 };
 
 export const Default = () => <Checkbox />;

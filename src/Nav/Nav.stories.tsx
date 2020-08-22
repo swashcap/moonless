@@ -4,7 +4,7 @@ import { Nav } from './Nav';
 
 export default {
   component: Nav,
-  title: 'Component|Nav',
+  title: 'Component/Nav',
 };
 
 export const Default = () => <Nav />;

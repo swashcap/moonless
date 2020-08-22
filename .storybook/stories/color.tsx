@@ -4,7 +4,7 @@ import getContrast from 'get-contrast';
 import { Text } from '../../src/';
 
 export default {
-  title: 'Design|Colors',
+  title: 'Design/Colors',
 };
 
 const Color = ({ name, value }: { name: string; value: number }) => {

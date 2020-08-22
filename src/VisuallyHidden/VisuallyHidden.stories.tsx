@@ -4,7 +4,7 @@ import { VisuallyHidden } from './VisuallyHidden';
 
 export default {
   component: VisuallyHidden,
-  title: 'Component|VisuallyHidden',
+  title: 'Component/VisuallyHidden',
 };
 
 export const Default = () => <VisuallyHidden>Default</VisuallyHidden>;

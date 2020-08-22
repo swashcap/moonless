@@ -4,7 +4,7 @@ import { List } from './List';
 
 export default {
   component: List,
-  title: 'Component|List',
+  title: 'Component/List',
 };
 
 export const Default = () => <List />;

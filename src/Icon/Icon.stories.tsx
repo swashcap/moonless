@@ -24,7 +24,7 @@ import {
 } from './Icon';
 
 export default {
-  title: 'Component|Icon',
+  title: 'Component/Icon',
 };
 
 export const ArrowDown = () => <ArrowDownIcon />;
