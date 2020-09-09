@@ -5,39 +5,114 @@ import styles from './Button.module.css';
 
 export type ButtonSize = 'small' | 'medium' | 'large';
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+export type ButtonElement = HTMLAnchorElement | HTMLButtonElement;
+
+export type ButtonVariant = 'primary' | 'secondary';
+
+export interface ButtonOwnProps {
   size?: ButtonSize;
-  variant: 'primary' | 'secondary';
 }
 
-const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
-  ({ className, size = 'medium', variant, ...rest }, ref) => (
+export interface ButtonAnchorProps extends React.AnchorHTMLAttributes<HTMLAnchorElement>, ButtonOwnProps {
+  as: 'a';
+}
+
+export interface ButtonButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, ButtonOwnProps {
+  as?: 'button';
+}
+
+export type ButtonProps<T extends ButtonElement> = T extends HTMLAnchorElement
+  ? ButtonAnchorProps
+  : ButtonButtonProps;
+
+export type ButtonRef<T> = (
+  instance: T | null
+) => void | React.MutableRefObject<T | null> | null;
+
+type BaseButtonProps<T extends ButtonElement> = ButtonProps<T> & {
+  variant: ButtonVariant;
+}
+
+const BaseButtonFn = <T extends ButtonElement = HTMLButtonElement>(
+  {
+    as,
+    children,
+    className,
+    size = 'medium',
+    variant,
+    ...rest
+  }: BaseButtonProps<T>,
+  ref: ButtonRef<T>
+) => {
+  const cls = clsx(
+    styles.Button,
+    size === 'small' && styles.ButtonSmall,
+    size === 'medium' && styles.ButtonMedium,
+    size === 'large' && styles.ButtonLarge,
+    variant === 'primary' && styles.ButtonPrimary,
+    variant === 'secondary' && styles.ButtonSecondary,
+    className
+  );
+
+  if (as === 'a') {
+    return (
+      <a
+        className={cls}
+        ref={ref as React.LegacyRef<HTMLAnchorElement>}
+        {...(rest as Omit<
+          ButtonAnchorProps,
+          'as' | 'children' | 'className' | 'size' | 'variant'
+        >)}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  return (
     <button
-      className={clsx(
-        styles.Button,
-        size === 'small' && styles.ButtonSmall,
-        size === 'medium' && styles.ButtonMedium,
-        size === 'large' && styles.ButtonLarge,
-        variant === 'primary' && styles.ButtonPrimary,
-        variant === 'secondary' && styles.ButtonSecondary,
-        className
-      )}
-      ref={ref}
-      {...rest}
-    />
-  )
+      className={cls}
+      type="button"
+      ref={ref as React.LegacyRef<HTMLButtonElement>}
+      {...(rest as Omit<
+        ButtonButtonProps,
+        'as' | 'children' | 'className' | 'size' | 'variant'
+      >)}
+    >
+      {children}
+    </button>
+  );
+};
+
+const BaseButton = React.forwardRef(
+  BaseButtonFn as React.ForwardRefRenderFunction<
+    ButtonElement,
+    BaseButtonProps<ButtonElement>
+  >
 );
 
-export type PrimaryButtonProps = Omit<ButtonProps, 'variant'>;
+// Primary
 
-export const PrimaryButton = React.forwardRef<
-  HTMLButtonElement,
-  PrimaryButtonProps
->((props, ref) => <Button ref={ref} variant="primary" {...props} />);
+const PrimaryButtonFn = (props: any, ref: any) => (
+  <BaseButton ref={ref} variant="primary" {...props} />
+);
 
-export type SecondaryButtonProps = Omit<ButtonProps, 'variant'>;
+export const PrimaryButton = React.forwardRef(
+  PrimaryButtonFn as React.ForwardRefRenderFunction<
+    ButtonElement,
+    ButtonProps<ButtonElement>
+  >
+);
 
-export const SecondaryButton = React.forwardRef<
-  HTMLButtonElement,
-  SecondaryButtonProps
->((props, ref) => <Button ref={ref} variant="secondary" {...props} />);
+// Secondary
+
+const SecondaryButtonFn = (props: any, ref: any) => (
+  <BaseButton ref={ref} variant="secondary" {...props} />
+);
+
+export const SecondaryButton = React.forwardRef(
+  SecondaryButtonFn as React.ForwardRefRenderFunction<
+    ButtonElement,
+    ButtonProps<ButtonElement>
+  >
+);

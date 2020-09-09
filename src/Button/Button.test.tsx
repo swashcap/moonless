@@ -28,6 +28,14 @@ describe('Button', () => {
       expect(button.textContent).toBe('Test 3');
     });
 
+    test('It should render as an anchor', () => {
+      const { getByRole } = render(
+        <Component as="a" href="http://example.com">Go to example</Component>
+      );
+
+      expect(getByRole('link')).toHaveAttribute('href', 'http://example.com');
+    });
+
     test.each<ButtonSize>(['small', 'medium', 'large'])(
       'It should render size %s.',
       (size) => {

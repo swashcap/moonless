@@ -5,6 +5,8 @@
   cursor: pointer;
   font-family: inherit;
   margin: 0;
+  text-align: center;
+  text-decoration: none;
 }
 
 .Button[disabled] {
