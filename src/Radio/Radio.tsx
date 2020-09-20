@@ -1,7 +1,7 @@
 import React from 'react';
 
 import styles from './Radio.module.css';
-import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden.module.css';
+import visuallyHiddenStyles from '../VisuallyHidden/VisuallyHidden.module.css';
 import { useId } from '../utils/useId';
 
 export interface RadioProps
@@ -27,7 +27,7 @@ export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
         <label className={styles.RadioLabel} htmlFor={id}>
           <input
             checked={checked}
-            className={VisuallyHidden}
+            className={visuallyHiddenStyles.VisuallyHidden}
             disabled={disabled}
             id={id}
             onChange={onChange}

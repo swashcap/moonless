@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 
 import styles from './Checkbox.module.css';
+import visuallyHiddenStyles from '../VisuallyHidden/VisuallyHidden.module.css';
 import { CheckIcon, MinusIcon } from '../Icon/Icon';
 import { ControlError } from '../private/ControlError/ControlError';
-import { VisuallyHidden } from '../VisuallyHidden/VisuallyHidden.module.css';
 import { useId } from '../utils/useId';
 
 export interface CheckboxProps
@@ -56,7 +56,7 @@ export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
             aria-describedby={error ? errorId : undefined}
             aria-invalid={error ? 'true' : undefined}
             checked={checked}
-            className={VisuallyHidden}
+            className={visuallyHiddenStyles.VisuallyHidden}
             disabled={disabled}
             id={id}
             onChange={onChange}
