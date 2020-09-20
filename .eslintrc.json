@@ -9,11 +9,15 @@
   ],
   "overrides": [
     {
+      "env": {
+        "browser": false,
+        "node": true
+      },
+      "files": ["*.js"],
       "parserOptions": {
         "ecmaVersion": 6,
         "sourceType": "module"
       },
-      "files": ["*.js"],
       "rules": {
         "@typescript-eslint/no-var-requires": "off"
       }
