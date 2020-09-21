@@ -1,10 +1,8 @@
 import babel from '@rollup/plugin-babel';
 import commonjs from '@rollup/plugin-commonjs';
-import csso from 'postcss-csso';
 import incstr from 'incstr';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
-import purge from '@fullhuman/postcss-purgecss';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 
@@ -34,12 +32,6 @@ const baseConfig = {
           return ids[key] || (ids[key] = nextId());
         },
       },
-      plugins: [
-        purge({
-          safelist: [/^(?!storybook).*/],
-        }),
-        csso,
-      ],
     }),
   ],
 };
