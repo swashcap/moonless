@@ -97,6 +97,7 @@ const BaseButton = React.forwardRef(
 
 // Primary
 
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
 const PrimaryButtonFn = (props: any, ref: any) => (
   <BaseButton ref={ref} variant="primary" {...props} />
 );
@@ -110,6 +111,7 @@ export const PrimaryButton = React.forwardRef(
 
 // Secondary
 
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
 const SecondaryButtonFn = (props: any, ref: any) => (
   <BaseButton ref={ref} variant="secondary" {...props} />
 );

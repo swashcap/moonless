@@ -17,7 +17,7 @@ export interface CheckboxProps
   id?: string;
   indeterminate?: boolean;
   label?: React.ReactNode;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => any;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(

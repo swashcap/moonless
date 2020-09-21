@@ -63,6 +63,7 @@ describe('Alert', () => {
   test('It should focus on button.', () => {
     const ref = React.createRef<Alert>();
     const { getByRole } = render(
+      /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
       <Alert onClose={jest.fn()} ref={ref as any}>
         Alert
       </Alert>

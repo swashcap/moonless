@@ -13,7 +13,7 @@ export interface TextFieldProps
   error?: React.ReactNode;
   id?: string;
   label?: React.ReactNode;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => any;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   value?: React.InputHTMLAttributes<HTMLInputElement>['value'];
 }
 

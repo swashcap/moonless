@@ -1,3 +1,4 @@
+/* eslint-disable-next-line @typescript-eslint/no-explicit-any */
 export const clsx = (...values: any[]) => {
   let i = 0;
   let str = '';

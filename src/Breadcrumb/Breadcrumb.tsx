@@ -17,11 +17,7 @@ export interface BreadcrumbProps
   >;
 }
 
-export const Breadcrumb: React.FC<BreadcrumbProps> = ({
-  children,
-  items,
-  ...rest
-}) => (
+export const Breadcrumb: React.FC<BreadcrumbProps> = ({ items, ...rest }) => (
   <nav {...rest}>
     <ol
       className={styles.BreadcrumbList}

@@ -1,6 +1,5 @@
 import React from 'react';
 
-import { useId } from '../utils/useId';
 import styles from './Tabs.module.css';
 
 export interface TabsProps {
@@ -10,7 +9,7 @@ export interface TabsProps {
   readonly onChange: (
     event: React.MouseEvent<HTMLButtonElement, MouseEvent>,
     index: number
-  ) => any;
+  ) => void;
 }
 
 export const Tabs: React.FC<TabsProps> = ({

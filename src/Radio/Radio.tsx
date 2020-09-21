@@ -13,7 +13,7 @@ export interface RadioProps
   disabled?: boolean;
   id?: string;
   label?: React.ReactNode;
-  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => any;
+  onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
 export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
