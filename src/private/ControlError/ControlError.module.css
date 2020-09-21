@@ -2,5 +2,5 @@
   background: var(--theme-color-error-background);
   color: var(--theme-color-error-text);
   font-size: var(--theme-size-small-font-size);
-  line-height: var(--typography-size-small-line-height);
+  line-height: var(--theme-size-small-line-height);
 }

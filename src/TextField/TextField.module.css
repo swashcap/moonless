@@ -41,5 +41,5 @@
 /** TextField: Error */
 
 .TextFieldError {
-  color: var(--color-red);
+  color: var(--color-red-100);
 }
