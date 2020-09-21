@@ -57,7 +57,7 @@
     "stylelint-order": "^4.1.0",
     "typed-css-modules": "^0.6.4",
     "typescript": "4.0.2",
-    "typescript-plugin-css-modules": "^2.4.0"
+    "typescript-plugin-css-modules": "^2.7.0"
   },
   "es6": "dist/index.es6.js",
   "homepage": "https://github.com/swashcap/moonless#readme",
