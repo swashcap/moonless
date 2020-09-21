@@ -4,6 +4,7 @@ import csso from 'postcss-csso';
 import incstr from 'incstr';
 import path from 'path';
 import postcss from 'rollup-plugin-postcss';
+import purge from '@fullhuman/postcss-purgecss';
 import { nodeResolve } from '@rollup/plugin-node-resolve';
 import { terser } from 'rollup-plugin-terser';
 
@@ -33,7 +34,12 @@ const baseConfig = {
           return ids[key] || (ids[key] = nextId());
         },
       },
-      plugins: [csso],
+      plugins: [
+        purge({
+          safelist: [/^(?!storybook).*/],
+        }),
+        csso,
+      ],
     }),
   ],
 };
