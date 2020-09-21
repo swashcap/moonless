@@ -5,6 +5,7 @@
   },
   "description": "A quiet design system.",
   "devDependencies": {
+    "@babel/core": "^7.11.6",
     "@babel/plugin-proposal-class-properties": "^7.10.4",
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.10.4",
     "@babel/plugin-proposal-optional-chaining": "^7.11.0",
@@ -29,6 +30,7 @@
     "@types/react-dom": "^16.9.8",
     "@typescript-eslint/eslint-plugin": "^4.1.1",
     "@typescript-eslint/parser": "^4.1.1",
+    "babel-loader": "^8.1.0",
     "eslint": "^7.7.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-jsx-a11y": "^6.3.1",
@@ -47,6 +49,7 @@
     "prettier": "^2.0.5",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-is": "^16.13.1",
     "react-test-renderer": "^16.13.1",
     "rollup": "^2.27.1",
     "rollup-plugin-postcss": "^3.1.8",
@@ -57,7 +60,8 @@
     "stylelint-order": "^4.1.0",
     "typed-css-modules": "^0.6.4",
     "typescript": "4.0.2",
-    "typescript-plugin-css-modules": "^2.7.0"
+    "typescript-plugin-css-modules": "^2.7.0",
+    "webpack": "^4.44.2"
   },
   "es6": "dist/index.es6.js",
   "homepage": "https://github.com/swashcap/moonless#readme",
