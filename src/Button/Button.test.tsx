@@ -30,7 +30,9 @@ describe('Button', () => {
 
     test('It should render as an anchor', () => {
       const { getByRole } = render(
-        <Component as="a" href="http://example.com">Go to example</Component>
+        <Component as="a" href="http://example.com">
+          Go to example
+        </Component>
       );
 
       expect(getByRole('link')).toHaveAttribute('href', 'http://example.com');

@@ -32,10 +32,14 @@ export const OnClick = () => (
 
 export const AsAnchor = () => (
   <div>
-    <SecondaryButton as="a" href="#example">Go to example section</SecondaryButton>
-    <PrimaryButton as="a" href="https://google.com" rel="nofollow">The Googs</PrimaryButton>
+    <SecondaryButton as="a" href="#example">
+      Go to example section
+    </SecondaryButton>
+    <PrimaryButton as="a" href="https://google.com" rel="nofollow">
+      The Googs
+    </PrimaryButton>
   </div>
-)
+);
 
 export const Size = () => (
   <div>

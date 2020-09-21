@@ -13,11 +13,15 @@ export interface ButtonOwnProps {
   size?: ButtonSize;
 }
 
-export interface ButtonAnchorProps extends React.AnchorHTMLAttributes<HTMLAnchorElement>, ButtonOwnProps {
+export interface ButtonAnchorProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement>,
+    ButtonOwnProps {
   as: 'a';
 }
 
-export interface ButtonButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement>, ButtonOwnProps {
+export interface ButtonButtonProps
+  extends React.ButtonHTMLAttributes<HTMLButtonElement>,
+    ButtonOwnProps {
   as?: 'button';
 }
 
@@ -31,7 +35,7 @@ export type ButtonRef<T> = (
 
 type BaseButtonProps<T extends ButtonElement> = ButtonProps<T> & {
   variant: ButtonVariant;
-}
+};
 
 const BaseButtonFn = <T extends ButtonElement = HTMLButtonElement>(
   {
