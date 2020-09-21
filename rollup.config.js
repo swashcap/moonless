@@ -19,6 +19,7 @@ const baseConfig = {
   },
   output: {
     dir: path.join(__dirname, 'dist'),
+    exports: 'auto',
   },
   plugins: [
     nodeResolve({
@@ -30,7 +31,6 @@ const baseConfig = {
     postcss({
       autoModules: false,
       extract: path.join(__dirname, 'dist/moonless.css'),
-      minimize: true,
       modules: {
         generateScopedName(name, filename) {
           const key = `${filename}_${name}`;
