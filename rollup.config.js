@@ -12,8 +12,14 @@ const nextId = incstr.idGenerator({
 const ids = {};
 
 const baseConfig = {
-  external: ['react', 'react-dom', /@babel\/runtime.*/],
-  input: './src/index.ts',
+  external: ['react', 'react-dom', /@babel\/runtime/],
+  input: {
+    index: path.join(__dirname, 'src/index.ts'),
+    moonless: path.join(__dirname, 'src/moonless.css'),
+  },
+  output: {
+    dir: path.join(__dirname, 'dist'),
+  },
   plugins: [
     nodeResolve({
       extensions: ['.mjs', '.js', '.json', '.jsx', '.node', '.ts', '.tsx'],
@@ -40,7 +46,12 @@ export default [
   {
     ...baseConfig,
     output: {
-      file: path.join(__dirname, 'dist/index.es6.js'),
+      ...baseConfig.output,
+      entryFileNames(chunkInfo) {
+        return chunkInfo.facadeModuleId.endsWith('.css')
+          ? `${chunkInfo.name}.css`
+          : `${chunkInfo.name}.es6.js`;
+      },
     },
     plugins: [
       babel({
@@ -55,7 +66,12 @@ export default [
   {
     ...baseConfig,
     output: {
-      file: path.join(__dirname, 'dist/index.esm.js'),
+      ...baseConfig.output,
+      entryFileNames(chunkInfo) {
+        return chunkInfo.facadeModuleId.endsWith('.css')
+          ? `${chunkInfo.name}.css`
+          : `${chunkInfo.name}.esm.js`;
+      },
     },
     plugins: [
       babel({
@@ -76,7 +92,12 @@ export default [
   {
     ...baseConfig,
     output: {
-      file: path.join(__dirname, 'dist/index.cjs.js'),
+      ...baseConfig.output,
+      entryFileNames(chunkInfo) {
+        return chunkInfo.facadeModuleId.endsWith('.css')
+          ? `${chunkInfo.name}.css`
+          : `${chunkInfo.name}.cjs.js`;
+      },
       format: 'cjs',
     },
     plugins: [
