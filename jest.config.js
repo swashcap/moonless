@@ -5,6 +5,7 @@ module.exports = {
    */
   moduleNameMapper: {
     '\\.(css|less)$': 'identity-obj-proxy',
+    'moonless-utils': '<rootDir>/packages/utils/dist/index.esm.js',
   },
   setupFilesAfterEnv: ['./jest.setup.js'],
 };
