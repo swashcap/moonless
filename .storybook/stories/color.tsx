@@ -1,7 +1,7 @@
 import React from 'react';
 import getContrast from 'get-contrast';
 
-import { Text } from '../../src/';
+import { Text } from '../../packages/components/src/';
 
 export default {
   title: 'Design/Colors',

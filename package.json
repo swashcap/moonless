@@ -1,8 +1,5 @@
 {
   "author": "Cory Reed",
-  "dependencies": {
-    "@babel/runtime": "^7.12.1"
-  },
   "description": "A quiet design system.",
   "devDependencies": {
     "@babel/core": "^7.12.3",
@@ -14,6 +11,7 @@
     "@babel/preset-env": "^7.12.1",
     "@babel/preset-react": "^7.12.1",
     "@babel/preset-typescript": "^7.12.1",
+    "@babel/runtime": "^7.12.1",
     "@commitlint/cli": "^11.0.0",
     "@commitlint/config-conventional": "^11.0.0",
     "@fullhuman/postcss-purgecss": "^3.0.0",
@@ -68,34 +66,24 @@
     "typescript-plugin-css-modules": "^2.7.0",
     "webpack": "^5.3.0"
   },
-  "es6": "dist/index.es6.js",
   "homepage": "https://github.com/swashcap/moonless#readme",
   "license": "MIT",
-  "main": "dist/index.cjs.js",
-  "module": "dist/index.esm.js",
   "name": "moonless",
-  "peerDependencies": {
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
-  },
+  "private": true,
   "repository": "github:swashcap/moonless",
   "scripts": {
     "build": "run-p build:*",
     "build:output": "NODE_ENV=production rollup --config rollup.config.js",
-    "build:types": "tcm --pattern 'src/**/*.module.css' && tsc --build tsconfig.build.config.json",
+    "build:types": "tcm --pattern 'packages/**/*.module.css' && tsc --build tsconfig.build.config.json",
     "clean": "./scripts/clean.sh",
     "format": "run-p format:*",
     "format:source": "yarn lint:source --fix",
-    "format:styles": "stylelint --fix 'src/**/*.css'",
+    "format:styles": "stylelint --fix 'packages/**/*.css'",
     "lint": "run-p lint:*",
-    "lint:source": "eslint --ext .js,.ts,.tsx '*.js' '.storybook/**/*.{js,ts,tsx}' 'src/**/*.{ts,tsx}'",
-    "lint:styles": "stylelint 'src/**/*.css'",
+    "lint:source": "eslint --ext .js,.ts,.tsx '*.js' '.storybook/**/*.{js,ts,tsx}' 'packages/**/*.{js,ts,tsx}'",
+    "lint:styles": "stylelint 'packages/**/*.css'",
     "start": "start-storybook --port 8000",
     "test": "NODE_ENV=test jest"
   },
-  "sideEffects": [
-    "**/*.css"
-  ],
-  "types": "dist/types/index.d.ts",
   "version": "0.0.1"
 }

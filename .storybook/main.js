@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   addons: ['@storybook/addon-docs'],
-  stories: ['./stories/**/*.tsx', '../src/**/*.stories.tsx'],
+  stories: ['./stories/**/*.tsx', '../packages/**/*.stories.tsx'],
   /**
    * Customize Webpack config.
    * {@link https://storybook.js.org/docs/configurations/custom-webpack-config/}
@@ -30,7 +30,8 @@ module.exports = {
         ],
       },
       {
-        include: path.resolve(__dirname, '../src/'),
+        exclude: [/node_modules/],
+        include: path.resolve(__dirname, '../'),
         test: /\.module\.css$/,
         use: [
           'style-loader',

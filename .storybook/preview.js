@@ -1,1 +1,1 @@
-import '../src/moonless.css';
+import '../packages/components/src/moonless.css';

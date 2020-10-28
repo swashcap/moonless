@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Text } from '../../src';
+import { Text } from '../../packages/components/src';
 
 export default {
   title: 'Design/Space',
