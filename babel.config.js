@@ -9,7 +9,7 @@ module.exports = {
     ['@babel/preset-typescript', { allExtensions: true, isTSX: true }],
   ],
   plugins: [
-    '@babel/plugin-proposal-class-properties',
+    ['@babel/plugin-proposal-class-properties', { loose: true }],
     '@babel/plugin-proposal-nullish-coalescing-operator',
     '@babel/plugin-proposal-optional-chaining',
     '@babel/plugin-transform-runtime',
