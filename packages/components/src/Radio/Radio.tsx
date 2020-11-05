@@ -1,8 +1,8 @@
 import React from 'react';
+import { useId } from 'moonless-utils';
 
 import styles from './Radio.module.css';
 import visuallyHiddenStyles from '../VisuallyHidden/VisuallyHidden.module.css';
-import { useId } from '../utils/useId';
 
 export interface RadioProps
   extends React.DetailedHTMLProps<

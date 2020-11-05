@@ -1,10 +1,10 @@
 import React, { useEffect, useRef } from 'react';
+import { useId } from 'moonless-utils';
 
 import styles from './Checkbox.module.css';
 import visuallyHiddenStyles from '../VisuallyHidden/VisuallyHidden.module.css';
 import { CheckIcon, MinusIcon } from '../Icon/Icon';
 import { ControlError } from '../private/ControlError/ControlError';
-import { useId } from '../utils/useId';
 
 export interface CheckboxProps
   extends React.DetailedHTMLProps<

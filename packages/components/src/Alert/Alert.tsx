@@ -1,7 +1,7 @@
 import React from 'react';
+import { clsx } from 'moonless-utils';
 
 import { XIcon } from '../Icon/Icon';
-import { clsx } from '../utils/clsx';
 
 import styles from './Alert.module.css';
 

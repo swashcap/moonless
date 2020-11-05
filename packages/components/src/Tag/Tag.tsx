@@ -1,6 +1,6 @@
 import React from 'react';
+import { clsx } from 'moonless-utils';
 
-import { clsx } from '../utils/clsx';
 import styles from './Tag.module.css';
 
 export type TagVariant =

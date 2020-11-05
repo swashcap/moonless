@@ -73,6 +73,7 @@
   "private": true,
   "repository": "github:swashcap/moonless",
   "scripts": {
+    "bootstrap": "rollup --config rollup.config.js && lerna bootstrap",
     "build": "run-p build:*",
     "build:output": "NODE_ENV=production rollup --config rollup.config.js",
     "build:types": "tcm --pattern 'packages/**/*.module.css' && tsc --build tsconfig.build.config.json",

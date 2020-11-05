@@ -1,23 +1,15 @@
 {
   "author": "Cory Reed",
-  "dependencies": {
-    "moonless-utils": "^0.0.1"
-  },
   "es6": "dist/index.es6.js",
   "homepage": "https://github.com/swashcap/moonless#readme",
   "license": "MIT",
   "main": "dist/index.cjs.js",
   "module": "dist/index.esm.js",
-  "name": "moonless-components",
+  "name": "moonless-utils",
   "peerDependencies": {
-    "@babel/runtime": "^7.12.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react": "^16.13.1"
   },
   "repository": "github:swashcap/moonless",
-  "sideEffects": [
-    "**/*.css"
-  ],
   "types": "dist/index.d.ts",
   "version": "0.0.1"
 }

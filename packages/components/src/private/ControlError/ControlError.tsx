@@ -1,7 +1,7 @@
 import React from 'react';
+import { clsx } from 'moonless-utils';
 
 import styles from './ControlError.module.css';
-import { clsx } from '../../utils/clsx';
 
 export type ControlErrorProps = React.DetailedHTMLProps<
   React.HTMLAttributes<HTMLSpanElement>,

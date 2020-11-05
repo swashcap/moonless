@@ -1,6 +1,6 @@
 import React from 'react';
+import { clsx } from 'moonless-utils';
 
-import { clsx } from '../utils/clsx';
 import styles from './Link.module.css';
 
 export type LinkProps = React.DetailedHTMLProps<

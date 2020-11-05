@@ -1,8 +1,8 @@
 import React from 'react';
+import { useId } from 'moonless-utils';
 
 import styles from './TextField.module.css';
 import { ControlError } from '../private/ControlError/ControlError';
-import { useId } from '../utils/useId';
 
 export interface TextFieldProps
   extends React.DetailedHTMLProps<
