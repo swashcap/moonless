@@ -1,0 +1,11 @@
+{
+  "author": "Cory Reed",
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/swashcap/moonless#readme",
+  "license": "MIT",
+  "name": "moonless-tokens",
+  "repository": "github:swashcap/moonless",
+  "version": "0.0.1"
+}
