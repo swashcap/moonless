@@ -1,0 +1,38 @@
+{
+  "component": {
+    "tabs": {
+      "borderBottomColor": { "value": "{color.theme.secondary.borderColor.base.value}" },
+      "borderBottomWidth": { "value": "{size.theme.medium.borderWidth.value}" },
+
+      "button": {
+        "padding": { "value": "{size.space.200.value}" },
+        "states": {
+          "base": {
+            "backgroundColor": {
+              "base": { "value": "{color.theme.secondary.backgroundColor.base.value}" },
+              "hover": { "value": "{color.theme.secondary.backgroundColor.hover.value}" },
+              "active": { "value": "{color.theme.secondary.backgroundColor.active.value}" }
+            },
+            "textColor": {
+              "base": { "value": "{color.theme.secondary.textColor.base.value}" },
+              "hover": { "value": "{color.theme.secondary.textColor.hover.value}" },
+              "active": { "value": "{color.theme.secondary.textColor.active.value}" }
+            }
+          },
+          "selected": {
+            "backgroundColor": {
+              "base": { "value": "{color.theme.primary.backgroundColor.base.value}" },
+              "hover": { "value": "{color.theme.primary.backgroundColor.hover.value}" },
+              "active": { "value": "{color.theme.primary.backgroundColor.active.value}" }
+            },
+            "textColor": {
+              "base": { "value": "{color.theme.primary.textColor.base.value}" },
+              "hover": { "value": "{color.theme.primary.textColor.hover.value}" },
+              "active": { "value": "{color.theme.primary.textColor.active.value}" }
+            }
+          }
+        }
+      }
+    }
+  }
+}

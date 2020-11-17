@@ -2,44 +2,46 @@
 
 .TextFieldLabel {
   display: block;
-  padding-bottom: var(--space-100);
+  padding-bottom: var(--component-text-field-label-padding-bottom);
 }
 
 /** TextField: Input */
 
 .TextFieldInput {
-  background: var(--color-gray-600);
-  border: 1px solid var(--color-gray-400);
-  color: var(--color-white);
+  background: var(--component-text-field-input-base-background-color);
+  border: var(--component-text-field-input-base-border-width) solid var(--component-text-field-input-base-border-color);
+  color: var(--component-text-field-input-base-text-color);
   font: inherit;
-  padding: var(--space-100);
+  padding: var(--component-text-field-input-base-padding);
   width: 100%;
 }
 
 .TextFieldInput:hover,
 :global(.storybook-focus) .TextFieldInput {
-  background: var(--color-gray-700);
-  border-color: var(--color-gray-300);
+  background: var(--component-text-field-input-hover-background-color);
+  border-color: var(--component-text-field-input-hover-border-color);
+  color: var(--component-text-field-input-hover-text-color);
 }
 
 .TextFieldInput:focus,
 :global(.storybook-focus) .TextFieldInput,
 .TextFieldInput:active,
 :global(.storybook-active) .TextFieldInput {
-  background: var(--color-gray-700);
-  border-color: var(--color-gray-300);
+  background: var(--component-text-field-input-active-background-color);
+  border-color: var(--component-text-field-input-active-border-color);
+  color: var(--component-text-field-input-active-text-color);
 }
 
 /** TextField: Input: Disabled */
 
 .TextFieldInput[disabled] {
-  background: var(--color-gray-500);
-  border-color: var(--color-gray-500);
-  color: var(--color-gray-200);
+  background: var(--component-text-field-input-disabled-background-color);
+  border-color: var(--component-text-field-input-disabled-border-color);
+  color: var(--component-text-field-input-disabled-text-color);
 }
 
 /** TextField: Error */
 
 .TextFieldError {
-  color: var(--color-red-100);
+  color: var(--component-text-field-error-text-color);
 }

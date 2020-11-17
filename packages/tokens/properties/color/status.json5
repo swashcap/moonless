@@ -1,0 +1,21 @@
+{
+  "color": {
+    "status": {
+      "error": {
+        "backgroundColor": { "value": "{color.base.red.300.value}" },
+        "borderColor": { "value": "{color.base.red.500.value}" },
+        "textColor": { "value": "{color.base.white.value}" }
+      },
+      "success": {
+        "backgroundColor": { "value": "{color.base.green.300.value}" },
+        "borderColor": { "value": "{color.base.green.500.value}" },
+        "textColor": { "value": "{color.base.white.value}" }
+      },
+      "warning": {
+        "backgroundColor": { "value": "{color.base.yellow.200.value}" },
+        "borderColor": { "value": "{color.base.yellow.500.value}" },
+        "textColor": { "value": "{color.base.black.value}" }
+      }
+    }
+  }
+}

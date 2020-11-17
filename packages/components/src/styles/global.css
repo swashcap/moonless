@@ -7,8 +7,8 @@
 }
 
 html {
-  background: var(--theme-color-background);
-  color: var(--theme-color-text);
+  background: var(--color-theme-background-color);
+  color: var(--color-theme-text-color);
   font-family: sans-serif;
   line-height: 1.5;
 }

@@ -1,0 +1,19 @@
+{
+  "component": {
+    "nav": {
+      "link": {
+        "backgroundColor": {
+          "base": { "value": "{color.base.transparent.value}" },
+          "hover": { "value": "{color.theme.secondary.backgroundColor.hover.value}" },
+          "active": { "value": "{color.theme.secondary.backgroundColor.active.value}" }
+        },
+        "padding": { "value": "{size.space.100.value}" },
+        "textColor": {
+          "base": { "value": "{color.theme.secondary.textColor.base.value}" },
+          "hover": { "value": "{color.theme.secondary.textColor.base.value}" },
+          "active": { "value": "{color.theme.secondary.textColor.active.value}" }
+        }
+      }
+    }
+  }
+}

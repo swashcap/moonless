@@ -1,0 +1,65 @@
+{
+  "color": {
+    "theme": {
+      "backgroundColor": { "value": "{color.base.black.value}" },
+      "textColor": { "value": "{color.base.white.value}" },
+
+      "primary": {
+        "backgroundColor": {
+          "base": { "value": "{color.base.purple.300.value}" },
+          "hover": { "value": "{color.base.purple.400.value}" },
+          "active": { "value": "{color.base.purple.500.value}" },
+          "disabled": { "value": "{color.base.gray.400.value}" },
+        },
+        "borderColor": {
+          "base": { "value": "{color.base.transparent.value}" },
+          "hover": { "value": "{color.base.transparent.value}" },
+          "active": { "value": "{color.base.transparent.value}" },
+          "disabled": { "value": "{color.base.transparent.value}" }
+        },
+        "textColor": {
+          "base": { "value": "{color.base.white.value}" },
+          "hover": { "value": "{color.base.white.value}" },
+          "active": { "value": "{color.base.white.value}" },
+          "disabled": { "value": "{color.base.white.value}" }
+        }
+      },
+      "secondary": {
+        "backgroundColor": {
+          "base": { "value": "{color.base.gray.700.value}" },
+          "hover": { "value": "{color.base.gray.700.value}" },
+          "active": { "value": "{color.base.gray.700.value}" },
+          "disabled": { "value": "{color.base.gray.700.value}" }
+        },
+        "borderColor": {
+          "base": { "value": "{color.base.purple.200.value}" },
+          "hover": { "value": "{color.base.purple.100.value}" },
+          "active": { "value": "{color.base.purple.100.value}" },
+          "disabled": { "value": "{color.base.gray.400.value}" }
+        },
+        "textColor": {
+          "base": { "value": "{color.base.purple.200.value}" },
+          "hover": { "value": "{color.base.purple.100.value}" },
+          "active": { "value": "{color.base.purple.100.value}" },
+          "disabled": { "value": "{color.base.gray.400.value}" }
+        }
+      },
+
+      "error": {
+        "backgroundColor": { "value": "{color.base.red.300.value}" },
+        "borderColor": { "value": "{color.base.red.500.value}" },
+        "textColor": { "value": "{color.base.white.value}" }
+      },
+      "success": {
+        "backgroundColor": { "value": "{color.base.green.300.value}" },
+        "borderColor": { "value": "{color.base.green.500.value}" },
+        "textColor": { "value": "{color.base.white.value}" }
+      },
+      "warning": {
+        "backgroundColor": { "value": "{color.base.yellow.300.value}" },
+        "borderColor": { "value": "{color.base.yellow.500.value}" },
+        "textColor": { "value": "{color.base.black.value}" }
+      }
+    }
+  }
+}

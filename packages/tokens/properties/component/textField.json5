@@ -1,0 +1,34 @@
+{
+  "component": {
+    "textFieldError": {
+      "textColor": { "value": "{color.base.red.500.value}" }
+    },
+    "textFieldLabel": {
+      "paddingBottom": { "value": "{size.space.100.value}" }
+    },
+    "textFieldInput": {
+      "base": {
+        "backgroundColor": { "value": "{color.base.gray.600.value}" },
+        "borderWidth": { "value": "1px" },
+        "borderColor": { "value": "{color.base.gray.400.value}" },
+        "padding": { "value": "{size.space.100.value}" },
+        "textColor": { "value": "{color.base.white.value}" }
+      },
+      "hover": {
+        "backgroundColor": { "value": "{color.base.gray.700.value}" },
+        "borderColor": { "value": "{color.base.gray.300.value}" },
+        "textColor": { "value": "{color.base.white.value}" }
+      },
+      "active": {
+        "backgroundColor": { "value": "{color.base.gray.700.value}" },
+        "borderColor": { "value": "{color.base.gray.300.value}" },
+        "textColor": { "value": "{color.base.white.value}" }
+      },
+      "disabled": {
+        "backgroundColor": { "value": "{color.base.gray.500.value}" },
+        "borderColor": { "value": "{color.base.gray.500.value}" },
+        "textColor": { "value": "{color.base.gray.200.value}" }
+      }
+    }
+  }
+}

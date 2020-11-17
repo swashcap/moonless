@@ -1,0 +1,11 @@
+{
+  "component": {
+    "link": {
+      "textColor": {
+        "base": { "value": "{color.base.purple.200.value}" },
+        "hover": { "value": "{color.base.purple.100.value}" },
+        "active": { "value": "{color.base.white.value}" }
+      }
+    }
+  }
+}

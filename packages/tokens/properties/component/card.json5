@@ -1,0 +1,11 @@
+{
+  "component": {
+    "card": {
+      "backgroundColor": { "value": "{color.base.gray.600.value}" },
+      "borderColor": { "value": "{color.base.gray.500.value}" },
+      "borderRadius": { "value": "{size.theme.medium.borderRadius.value}" },
+      "borderWidth": { "value": "{size.theme.medium.borderWidth.value}" },
+      "padding": { "value": "{size.space.200.value}" }
+    }
+  }
+}

@@ -1,6 +1,6 @@
 .ControlError {
-  background: var(--theme-color-error-background);
-  color: var(--theme-color-error-text);
-  font-size: var(--theme-size-small-font-size);
-  line-height: var(--theme-size-small-line-height);
+  background: var(--component-control-error-background-color);
+  color: var(--component-control-error-text-color);
+  font-size: var(--component-control-error-font-size);
+  line-height: var(--component-control-error-line-height);
 }

@@ -3,16 +3,16 @@
 .Grid {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--space-100));
-  margin-right: calc(-1 * var(--space-100));
+  margin-left: calc(-1 * var(--component-grid-gutter));
+  margin-right: calc(-1 * var(--component-grid-gutter));
 }
 
 /** Grid: Col */
 
 .GridCol {
   flex: 1;
-  padding-left: var(--space-100);
-  padding-right: var(--space-100);
+  padding-left: var(--component-grid-gutter);
+  padding-right: var(--component-grid-gutter);
 }
 
 .GridCol1 {

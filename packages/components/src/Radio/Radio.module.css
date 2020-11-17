@@ -9,28 +9,29 @@
 /** Radio: Indicator */
 
 .RadioIndicator {
-  border-color: var(--theme-color-secondary-border);
+  background: var(--component-radio-indicator-states-base-background-color-base);
+  border-color: var(--component-radio-indicator-states-base-border-color-base);
   border-radius: 100%;
   border-style: solid;
-  border-width: var(--theme-size-medium-border-width);
+  border-width: var(--component-radio-indicator-border-width);
   cursor: pointer;
-  height: 1.5em;
-  margin-right: var(--space-100);
-  width: 1.5em;
+  height: var(--component-radio-indicator-height);
+  margin-right: var(--component-radio-label-margin-left);
+  width: var(--component-radio-indicator-width);
 }
 
 .RadioIndicator:hover,
 :global(.storybook-hover) .RadioIndicator {
-  background: var(--theme-color-secondary-hover-background);
-  border-color: var(--theme-color-secondary-hover-border);
+  background: var(--component-radio-indicator-states-base-background-color-hover);
+  border-color: var(--component-radio-indicator-states-base-border-color-hover);
 }
 
 .RadioIndicator:focus,
 :global(.storybook-focus) .RadioIndicator,
 .RadioIndicator:active,
 :global(.storybook-active) .RadioIndicator {
-  background: var(--theme-color-secondary-active-background);
-  border-color: var(--theme-color-secondary-active-border);
+  background: var(--component-radio-indicator-states-base-background-color-active);
+  border-color: var(--component-radio-indicator-states-base-border-color-active);
 }
 
 /** Radio: Indicator: Checked */
@@ -38,13 +39,13 @@
 /* stylelint-disable no-descending-specificity */
 
 input:checked ~ .RadioIndicator {
-  background: var(--theme-color-primary-background);
-  border-color: var(--theme-color-primary-border);
+  background: var(--component-radio-indicator-states-checked-background-color-base);
+  border-color: var(--component-radio-indicator-states-checked-border-color-base);
   position: relative;
 }
 
 input:checked ~ .RadioIndicator::after {
-  background: var(--theme-color-primary-text);
+  background: var(--component-radio-dot-states-checked-background-color);
   border-radius: 100%;
   content: '';
   height: 0.75em;
@@ -56,29 +57,29 @@ input:checked ~ .RadioIndicator::after {
 
 input:checked ~ .RadioIndicator:hover,
 :global(.storybook-hover) input:checked ~ .RadioIndicator {
-  background: var(--theme-color-primary-hover-background);
-  border-color: var(--theme-color-primary-hover-border);
+  background: var(--component-radio-indicator-states-checked-background-color-hover);
+  border-color: var(--component-radio-indicator-states-checked-border-color-hover);
 }
 
 input:checked ~ .RadioIndicator:focus,
 :global(.storybook-focus) input:checked ~ .RadioIndicator,
 input:checked ~ .RadioIndicator:active,
 :global(.storybook-active) input:checked ~ .RadioIndicator {
-  background: var(--theme-color-primary-active-background);
-  border-color: var(--theme-color-primary-active-border);
+  background: var(--component-radio-indicator-states-checked-background-color-active);
+  border-color: var(--component-radio-indicator-states-checked-border-color-active);
 }
 
 /** Radio: Indicator: Disabled */
 
 input[disabled] ~ .RadioIndicator {
-  background: var(--theme-color-secondary-disabled-background);
-  border-color: var(--theme-color-secondary-disabled-border);
+  background: var(--component-radio-indicator-states-base-background-color-disabled);
+  border-color: var(--component-radio-indicator-states-base-border-color-disabled);
   cursor: default;
 }
 
 input[disabled]:checked ~ .RadioIndicator {
-  background: var(--theme-color-primary-disabled-background);
-  border-color: var(--theme-color-primary-disabled-border);
+  background: var(--component-radio-indicator-states-checked-background-color-disabled);
+  border-color: var(--component-radio-indicator-states-checked-border-color-disabled);
 }
 
 /* stylelint-enable no-descending-specificity */
@@ -86,5 +87,5 @@ input[disabled]:checked ~ .RadioIndicator {
 /** Radio: Error */
 
 .RadioError {
-  margin-top: var(--space-100);
+  margin-top: var(--component-radio-error-margin-top);
 }

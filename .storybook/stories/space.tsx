@@ -1,27 +1,11 @@
 import React from 'react';
 
 import { Text } from '../../packages/components/src';
+import variables from "../../packages/tokens/dist/js/variables.cjs";
 
 export default {
   title: 'Design/Space',
 };
-
-const Space: React.FC<{ value: string }> = ({ value }) => (
-  <tr>
-    <th scope="row" style={{ padding: 'var(--space-100)' }}>
-      <Text variant="caption">{`space-${value}`}</Text>
-    </th>
-    <td style={{ padding: 'var(--space-100)' }}>
-      <div
-        style={{
-          background: 'var(--theme-color-primary-background)',
-          height: `var(--space-${value})`,
-          width: `var(--space-${value})`,
-        }}
-      />
-    </td>
-  </tr>
-);
 
 export const Default = () => (
   <table
@@ -30,11 +14,26 @@ export const Default = () => (
     }}
   >
     <tbody>
-      <Space value="50" />
-      <Space value="100" />
-      <Space value="200" />
-      <Space value="300" />
-      <Space value="400" />
+      {Object.keys(variables.size.space).map((name) => {
+        const value = variables.size.space[name].value;
+
+        return (
+          <tr key={name}>
+            <th scope="row" style={{ padding: ".5rem" }}>
+              <Text variant="caption">{`size-space-${name}`}</Text>
+            </th>
+            <td style={{ padding: ".5rem" }}>
+              <div
+                style={{
+                  background: variables.color.theme.primary.backgroundColor.base.value,
+                  height: value,
+                  width: value,
+                }}
+              />
+            </td>
+          </tr>
+        );
+      })}
     </tbody>
   </table>
 );

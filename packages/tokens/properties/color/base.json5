@@ -1,0 +1,95 @@
+{
+  "color": {
+    "base": {
+      "black": { "value": "#000000" },
+      "transparent": { "value": "transparent" },
+      "white": { "value": "#ffffff" },
+
+      /**
+       * Blue
+       * {@link https://www.colorbox.io/#steps=5#hue_start=194#hue_end=213#hue_curve=easeInOutQuad#sat_start=7#sat_end=92#sat_curve=easeOutQuad#sat_rate=130#lum_start=99#lum_end=53#lum_curve=easeInOutQuad#minor_steps_map=none}
+       */
+      "blue": {
+        "100": { "value": "#e5f7fc" },
+        "200": { "value": "#61c8ee" },
+        "300": { "value": "#0b7ac4" },
+        "400": { "value": "#004996" },
+        "500": { "value": "#003d87" }
+      },
+
+      /**
+       * Gray
+       * @{link https://www.colorbox.io/#steps=7#hue_start=279#hue_end=284#hue_curve=easeInOutQuad#sat_start=1#sat_end=16#sat_curve=easeInQuad#sat_rate=130#lum_start=97#lum_end=13#lum_curve=easeInOutQuad#minor_steps_map=none}
+       */
+      "gray": {
+        "100": { "value": "#f6f4f7" },
+        "200": { "value": "#f2eff4" },
+        "300": { "value": "#e1dbe3" },
+        "400": { "value": "#9e97a1" },
+        "500": { "value": "#38343a" },
+        "600": { "value": "#242025" },
+        "700": { "value": "#1f1a21" }
+      },
+
+      /**
+       * Green
+       * {@link https://www.colorbox.io/#steps=5#hue_start=133#hue_end=159#hue_curve=easeInOutQuad#sat_start=7#sat_end=92#sat_curve=easeOutQuad#sat_rate=130#lum_start=98#lum_end=43#lum_curve=easeInOutQuad#minor_steps_map=none}
+       */
+      "green": {
+        "100": { "value": "#e3fae8" },
+        "200": { "value": "#5fe985" },
+        "300": { "value": "#0ab656" },
+        "400": { "value": "#00804c" },
+        "500": { "value": "#006e47" }
+      },
+
+      /**
+       * Orange
+       * {@link https://www.colorbox.io/#steps=5#hue_start=24#hue_end=31#hue_curve=easeInOutQuad#sat_start=15#sat_end=98#sat_curve=easeOutQuad#sat_rate=130#lum_start=99#lum_end=62#lum_curve=easeInOutQuad#minor_steps_map=none}
+       */
+      "orange": {
+        "100": { "value": "#fcdfcb" },
+        "200": { "value": "#f1914c" },
+        "300": { "value": "#cf5f00" },
+        "400": { "value": "#aa5600" },
+        "500": { "value": "#9e5200" }
+      },
+
+      /**
+       * Purple
+       * {@link https://www.colorbox.io/#steps=5#hue_start=276#hue_end=292#hue_curve=easeInOutQuad#sat_start=7#sat_end=92#sat_curve=easeOutQuad#sat_rate=130#lum_start=99#lum_end=53#lum_curve=easeInOutQuad#minor_steps_map=none}
+       */
+      "purple": {
+        "100": { "value": "#f3e5fc" },
+        "200": { "value": "#b961ed" },
+        "300": { "value": "#920bc2" },
+        "400": { "value": "#7e0097" },
+        "500": { "value": "#750087" }
+      },
+
+      /**
+       * Red
+       * {@link https://www.colorbox.io/#steps=5#hue_start=4#hue_end=0#hue_curve=easeInOutQuad#sat_start=10#sat_end=88#sat_curve=easeOutQuad#sat_rate=130#lum_start=99#lum_end=49#lum_curve=easeInOutQuad#minor_steps_map=none}
+       */
+      "red": {
+        "100": { "value": "#fcdedc" },
+        "200": { "value": "#ed6961" },
+        "300": { "value": "#bf1611" },
+        "400": { "value": "#8d0100" },
+        "500": { "value": "#7d0000" }
+      },
+
+      /**
+       * Yellow
+       * {@link https://www.colorbox.io/#steps=5#hue_start=51#hue_end=58#hue_curve=easeInOutQuad#sat_start=7#sat_end=92#sat_curve=easeOutQuad#sat_rate=130#lum_start=98#lum_end=35#lum_curve=easeInOutQuad#minor_steps_map=none}
+       */
+      "yellow": {
+        "100": { "value": "#faf6e3" },
+        "200": { "value": "#e6d45e" },
+        "300": { "value": "#ac9d0a" },
+        "400": { "value": "#6e6900" },
+        "500": { "value": "#595600" }
+      }
+    }
+  }
+}

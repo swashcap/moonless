@@ -1,41 +1,41 @@
 .Tag {
-  border-width: var(--theme-size-xsmall-border-width);
-  border-radius: var(--theme-size-xsmall-border-radius);
+  border-radius: var(--component-tag-border-radius);
   border-style: solid;
+  border-width: var(--component-tag-border-width);
   display: inline-block;
-  font-size: var(--theme-size-xsmall-font-size);
-  line-height: var(--theme-size-xsmall-line-height);
-  padding: var(--theme-size-xsmall-padding);
+  font-size: var(--component-tag-font-size);
+  line-height: var(--component-tag-line-height);
+  padding: var(--component-tag-padding-vertical) var(--component-tag-padding-horizontal);
 }
 
 /* Variant */
 
 .TagError {
-  background: var(--theme-color-error-background);
-  border-color: var(--theme-color-error-border);
-  color: var(--theme-color-error-text);
+  background: var(--component-tag-variant-error-background-color);
+  border-color: var(--component-tag-variant-error-border-color);
+  color: var(--component-tag-variant-error-text-color);
 }
 
 .TagPrimary {
-  background: var(--theme-color-primary-background);
-  border-color: var(--theme-color-primary-border);
-  color: var(--theme-color-primary-text);
+  background: var(--component-tag-variant-primary-background-color);
+  border-color: var(--component-tag-variant-primary-border-color);
+  color: var(--component-tag-variant-primary-text-color);
 }
 
 .TagSecondary {
-  background: var(--theme-color-secondary-background);
-  border-color: var(--theme-color-secondary-border);
-  color: var(--theme-color-secondary-text);
+  background: var(--component-tag-variant-secondary-background-color);
+  border-color: var(--component-tag-variant-secondary-border-color);
+  color: var(--component-tag-variant-secondary-text-color);
 }
 
 .TagSuccess {
-  background: var(--theme-color-success-background);
-  border-color: var(--theme-color-success-border);
-  color: var(--theme-color-success-text);
+  background: var(--component-tag-variant-success-background-color);
+  border-color: var(--component-tag-variant-success-border-color);
+  color: var(--component-tag-variant-success-text-color);
 }
 
 .TagWarning {
-  background: var(--theme-color-warning-background);
-  border-color: var(--theme-color-warning-border);
-  color: var(--theme-color-warning-text);
+  background: var(--component-tag-variant-warning-background-color);
+  border-color: var(--component-tag-variant-warning-border-color);
+  color: var(--component-tag-variant-warning-text-color);
 }

@@ -1,8 +1,8 @@
 .Alert {
-  border-radius: var(--theme-size-medium-border-radius);
+  border-radius: var(--component-alert-border-radius);
   border-style: solid;
-  border-width: var(--theme-size-medium-border-width);
-  padding: 0.667rem 1rem;
+  border-width: var(--component-alert-border-width);
+  padding: var(--component-alert-padding-vertical) var(--component-alert-padding-horizontal);
 }
 
 .AlertOnClose {
@@ -26,19 +26,19 @@
 /** Variant */
 
 .AlertError {
-  background: var(--theme-color-error-background);
-  border-color: var(--theme-color-error-border);
-  color: var(--theme-color-error-text);
+  background: var(--component-alert-error-background-color);
+  border-color: var(--component-alert-error-border-color);
+  color: var(--component-alert-error-text-color);
 }
 
 .AlertSuccess {
-  background: var(--theme-color-success-background);
-  border-color: var(--theme-color-success-border);
-  color: var(--theme-color-success-text);
+  background: var(--component-alert-success-background-color);
+  border-color: var(--component-alert-success-border-color);
+  color: var(--component-alert-success-text-color);
 }
 
 .AlertWarning {
-  background: var(--theme-color-warning-background);
-  border-color: var(--theme-color-warning-border);
-  color: var(--theme-color-warning-text);
+  background: var(--component-alert-warning-background-color);
+  border-color: var(--component-alert-warning-border-color);
+  color: var(--component-alert-warning-text-color);
 }

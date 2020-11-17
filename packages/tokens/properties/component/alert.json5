@@ -1,0 +1,28 @@
+{
+  "component": {
+    "alert": {
+      "borderRadius": { "value": "{size.theme.medium.borderRadius.value}" },
+      "borderWidth": { "value": "{size.theme.medium.borderWidth.value}" },
+      "paddingHorizontal": { "value": "{size.theme.medium.paddingHorizontal.value}" },
+      "paddingVertical": { "value": "{size.theme.medium.paddingVertical.value}" },
+
+      /* Variants */
+
+      "error": {
+        "backgroundColor": { "value": "{color.theme.error.backgroundColor.value}" },
+        "borderColor": { "value": "{color.theme.error.borderColor.value}" },
+        "textColor": { "value": "{color.theme.error.textColor.value}" }
+      },
+      "success": {
+        "backgroundColor": { "value": "{color.theme.success.backgroundColor.value}" },
+        "borderColor": { "value": "{color.theme.success.borderColor.value}" },
+        "textColor": { "value": "{color.theme.success.textColor.value}" }
+      },
+      "warning": {
+        "backgroundColor": { "value": "{color.theme.warning.backgroundColor.value}" },
+        "borderColor": { "value": "{color.theme.warning.borderColor.value}" },
+        "textColor": { "value": "{color.theme.warning.textColor.value}" }
+      }
+    }
+  }
+}

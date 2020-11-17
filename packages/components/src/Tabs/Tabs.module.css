@@ -1,7 +1,7 @@
 .TabsList {
-  border-color: var(--theme-color-secondary-border);
+  border-color: var(--component-tabs-border-bottom-color);
   border-style: solid;
-  border-width: 0 0 var(--theme-size-medium-border-width);
+  border-width: 0 0 var(--component-tabs-border-bottom-width);
   display: flex;
 }
 
@@ -9,39 +9,41 @@
 
 .TabsButton {
   -webkit-appearance: none;
-  background: var(--theme-color-secondary-background);
+  background: var(--component-tabs-button-states-base-background-color-base);
   border: none;
-  color: var(--theme-color-secondary-text);
+  color: var(--component-tabs-button-states-base-text-color-base);
   cursor: pointer;
+  font-size: 100%;
+  line-height: inherit;
   margin: 0;
-  padding: var(--theme-size-medium-padding);
+  padding: var(--component-tabs-button-padding);
 }
 
 .TabsButton:hover {
-  background: var(--theme-color-secondary-hover-background);
-  color: var(--theme-color-secondary-hover-text);
+  background: var(--component-tabs-button-states-base-background-color-hover);
+  color: var(--component-tabs-button-states-base-text-color-hover);
 }
 
 .TabsButton:focus,
 .TabsButton:active {
-  background: var(--theme-color-secondary-active-background);
-  color: var(--theme-color-secondary-active-text);
+  background: var(--component-tabs-button-states-base-background-color-active);
+  color: var(--component-tabs-button-states-base-text-color-active);
 }
 
 /** Tabs: Button: Selected */
 
 .TabsButton[aria-selected] {
-  background: var(--theme-color-primary-background);
-  color: var(--theme-color-primary-text);
+  background: var(--component-tabs-button-states-selected-background-color-base);
+  color: var(--component-tabs-button-states-selected-text-color-base);
 }
 
 .TabsButton[aria-selected]:hover {
-  background: var(--theme-color-primary-hover-background);
-  color: var(--theme-color-primary-hover-text);
+  background: var(--component-tabs-button-states-selected-background-color-hover);
+  color: var(--component-tabs-button-states-selected-text-color-hover);
 }
 
 .TabsButton[aria-selected]:focus,
 .TabsButton[aria-selected]:active {
-  background: var(--theme-color-primary-active-background);
-  color: var(--theme-color-primary-active-text);
+  background: var(--component-tabs-button-states-selected-background-color-active);
+  color: var(--component-tabs-button-states-selected-text-color-active);
 }

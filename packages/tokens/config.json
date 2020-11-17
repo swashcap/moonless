@@ -1,6 +1,17 @@
 {
-  "source": ["properties/**/*.json"],
+  "source": ["properties/**/*.json5"],
   "platforms": {
+    "json": {
+      "transformGroup": "js",
+      "buildPath": "./dist/js/",
+      "files": [{
+        "destination": "variables.cjs.js",
+        "format": "javascript/module"
+      }, {
+        "destination": "variables.es6.js",
+        "format": "javascript/es6"
+      }]
+    },
     "scss": {
       "transformGroup": "css",
       "buildPath": "./dist/css/",

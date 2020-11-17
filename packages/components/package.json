@@ -1,6 +1,7 @@
 {
   "author": "Cory Reed",
   "dependencies": {
+    "moonless-tokens": "^0.0.1",
     "moonless-utils": "^0.0.1"
   },
   "es6": "dist/index.es6.js",

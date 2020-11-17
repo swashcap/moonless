@@ -1,0 +1,12 @@
+{
+  "component": {
+    "list": {
+      "item": {
+        "borderBottomWidth": { "value": "1" },
+        "borderBottomColor": { "value": "{color.base.gray.500.value}" },
+        "paddingHorizontal": { "value": "{size.space.200.value}" },
+        "paddingVertical": { "value": "{size.space.100.value}" }
+      }
+    }
+  }
+}

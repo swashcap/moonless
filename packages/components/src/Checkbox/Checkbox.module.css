@@ -8,34 +8,34 @@
 
 .CheckboxIndicator {
   align-items: center;
-  background: var(--theme-color-secondary-background);
-  border-color: var(--theme-color-secondary-border);
-  border-radius: var(--theme-size-medium-border-radius);
+  background: var(--components-checkbox-indicator-states-base-background-color-base);
+  border-color: var(--components-checkbox-indicator-states-base-border-color-base);
+  border-radius: var(--components-checkbox-indicator-border-radius);
   border-style: solid;
-  border-width: var(--theme-size-medium-border-width);
-  color: var(--theme-color-secondary-text);
+  border-width: var(--components-checkbox-indicator-border-width);
+  color: var(--components-checkbox-indicator-states-base-icon-color-base);
   cursor: pointer;
   display: flex;
-  height: 1.5rem;
+  height: var(--components-checkbox-indicator-height);
   justify-content: center;
-  margin-right: var(--space-100);
-  width: 1.5rem;
+  margin-right: var(--components-checkbox-label-margin-left);
+  width: var(--components-checkbox-indicator-width);
 }
 
 .CheckboxIndicator:hover,
 :global(.storybook-hover) .CheckboxIndicator {
-  background: var(--theme-color-secondary-hover-background);
-  border-color: var(--theme-color-secondary-hover-border);
-  color: var(--theme-color-secondary-hover-text);
+  background: var(--components-checkbox-indicator-states-base-background-color-hover);
+  border-color: var(--components-checkbox-indicator-states-base-border-color-hover);
+  color: var(--components-checkbox-indicator-states-base-icon-color-hover);
 }
 
 .CheckboxIndicator:focus,
 :global(.storybook-focus) .CheckboxIndicator,
 .CheckboxIndicator:active,
 :global(.storybook-active) .CheckboxIndicator {
-  background: var(--theme-color-secondary-active-background);
-  border-color: var(--theme-color-secondary-active-border);
-  color: var(--theme-color-secondary-active-text);
+  background: var(--components-checkbox-indicator-states-base-background-color-active);
+  border-color: var(--components-checkbox-indicator-states-base-border-color-active);
+  color: var(--components-checkbox-indicator-states-base-icon-color-active);
 }
 
 .CheckboxIndicatorIcon {
@@ -47,25 +47,25 @@
 /* stylelint-disable no-descending-specificity */
 input:checked ~ .CheckboxIndicator,
 input:indeterminate ~ .CheckboxIndicator {
-  background: var(--theme-color-primary-background);
-  border-color: var(--theme-color-primary-border);
-  color: var(--theme-color-primary-text);
+  background: var(--components-checkbox-indicator-states-checked-background-color-base);
+  border-color: var(--components-checkbox-indicator-states-checked-border-color-base);
+  color: var(--components-checkbox-indicator-states-checked-icon-color-base);
 }
 
 input:checked ~ .CheckboxIndicator:hover,
 :global(.storybook-hover) input:checked ~ .CheckboxIndicator {
-  background: var(--theme-color-primary-hover-background);
-  border-color: var(--theme-color-primary-hover-border);
-  color: var(--theme-color-primary-hover-text);
+  background: var(--components-checkbox-indicator-states-checked-background-color-hover);
+  border-color: var(--components-checkbox-indicator-states-checked-border-color-hover);
+  color: var(--components-checkbox-indicator-states-checked-icon-color-hover);
 }
 
 input:checked ~ .CheckboxIndicator:focus,
 :global(.storybook-focus) input:checked ~ .CheckboxIndicator,
 input:checked ~ .CheckboxIndicator:active,
 :global(.storybook-active) input:checked ~ .CheckboxIndicator {
-  background: var(--theme-color-primary-active-background);
-  border-color: var(--theme-color-primary-active-border);
-  color: var(--theme-color-primary-active-text);
+  background: var(--components-checkbox-indicator-states-checked-background-color-active);
+  border-color: var(--components-checkbox-indicator-states-checked-border-color-active);
+  color: var(--components-checkbox-indicator-states-checked-icon-color-active);
 }
 
 input:indeterminate ~ .CheckboxIndicator .CheckboxIndicatorIcon,
@@ -76,21 +76,22 @@ input:checked ~ .CheckboxIndicator .CheckboxIndicatorIcon {
 /** Checkbox: Indicator: Disabled */
 
 input[disabled] ~ .CheckboxIndicator {
-  background: var(--theme-color-secondary-disabled-background);
-  border-color: var(--theme-color-secondary-disabled-border);
-  color: var(--theme-color-secondary-disabled-text);
+  background: var(--components-checkbox-indicator-states-base-background-color-disabled);
+  border-color: var(--components-checkbox-indicator-states-base-border-color-disabled);
+  color: var(--components-checkbox-indicator-states-base-icon-color-disabled);
   cursor: default;
 }
 
 input[disabled]:checked ~ .CheckboxIndicator {
-  background: var(--theme-color-primary-disabled-background);
-  border-color: var(--theme-color-primary-disabled-border);
-  color: var(--theme-color-primary-disabled-text);
+  background: var(--components-checkbox-indicator-states-checked-background-color-disabled);
+  border-color: var(--components-checkbox-indicator-states-checked-border-color-disabled);
+  color: var(--components-checkbox-indicator-states-checked-icon-color-disabled);
 }
+
 /* stylelint-enable no-descending-specificity */
 
 /** Checkbox: Error */
 
 .CheckboxError {
-  margin-top: var(--space-100);
+  margin-top: var(--components-checkbox-error-margin-top);
 }

@@ -1,0 +1,13 @@
+{
+  "size": {
+    "lineHeight": {
+      "50": { "value": "1.3333", "comment": "16px" },
+      "100": { "value": "1.4285", "comment": "20px" },
+      "200": { "value": "1.5", "comment": "24px" },
+      "300": { "value": "1.75", "comment": "28px" },
+      "400": { "value": "2", "comment": "32px" },
+      "500": { "value": "2.25", "comment": "26px" },
+      "600": { "value": "2.5", "comment": "40px" }
+    }
+  }
+}

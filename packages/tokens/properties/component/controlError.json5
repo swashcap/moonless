@@ -1,0 +1,10 @@
+{
+  "component": {
+    "controlError": {
+      "backgroundColor": { "value": "{color.theme.error.backgroundColor.value}" },
+      "fontSize": { "value": "{size.theme.small.fontSize.value}" },
+      "lineHeight": { "value": "{size.theme.small.lineHeight.value}" },
+      "textColor": { "value": "{color.theme.error.textColor.value}" }
+    }
+  }
+}

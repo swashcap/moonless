@@ -8,10 +8,7 @@ module.exports = {
     atImport(),
     customProperties({
       importFrom: [
-        'packages/components/src/tokens/color.css',
-        'packages/components/src/tokens/space.css',
-        'packages/components/src/tokens/typography.css',
-        'packages/components/src/styles/theme.css',
+        'packages/tokens/dist/css/variables.css',
       ],
       preserve: false,
     }),

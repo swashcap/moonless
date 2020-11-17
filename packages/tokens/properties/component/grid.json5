@@ -1,0 +1,7 @@
+{
+  "component": {
+    "grid": {
+      "gutter": { "value": "{size.space.100.value}" }
+    }
+  }
+}
