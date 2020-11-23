@@ -7,9 +7,7 @@ module.exports = {
   plugins: [
     atImport(),
     customProperties({
-      importFrom: [
-        'packages/tokens/dist/css/variables.css',
-      ],
+      importFrom: ['packages/tokens/dist/css/variables.css'],
       preserve: false,
     }),
     purge({

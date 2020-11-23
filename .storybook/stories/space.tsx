@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Text } from '../../packages/components/src';
-import variables from "../../packages/tokens/dist/js/variables.cjs";
+import variables from '../../packages/tokens/dist/js/variables.cjs';
 
 export default {
   title: 'Design/Space',
@@ -19,13 +19,14 @@ export const Default = () => (
 
         return (
           <tr key={name}>
-            <th scope="row" style={{ padding: ".5rem" }}>
+            <th scope="row" style={{ padding: '.5rem' }}>
               <Text variant="caption">{`size-space-${name}`}</Text>
             </th>
-            <td style={{ padding: ".5rem" }}>
+            <td style={{ padding: '.5rem' }}>
               <div
                 style={{
-                  background: variables.color.theme.primary.backgroundColor.base.value,
+                  background:
+                    variables.color.theme.primary.backgroundColor.base.value,
                   height: value,
                   width: value,
                 }}

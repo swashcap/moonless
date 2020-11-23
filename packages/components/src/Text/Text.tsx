@@ -24,9 +24,9 @@ export type TextElement =
   | 'small'
   | 'span';
 
-export type TextProps<T extends TextElement> = React.HTMLAttributes<
-  HTMLElement
-> & {
+export type TextProps<
+  T extends TextElement
+> = React.HTMLAttributes<HTMLElement> & {
   as?: T;
   /**
    * The text's size/type variation.

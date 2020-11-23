@@ -2,7 +2,7 @@ import React from 'react';
 import getContrast from 'get-contrast';
 
 import { Text } from '../../packages/components/src/';
-import variables from "../../packages/tokens/dist/js/variables.cjs";
+import variables from '../../packages/tokens/dist/js/variables.cjs';
 
 export default {
   title: 'Design/Colors',
@@ -30,7 +30,7 @@ const Color = ({ name, value }: { name: string; value: number }) => (
   </div>
 );
 
-const ColorSection = ({ name, values }: { name: string, values: any }) => (
+const ColorSection = ({ name, values }: { name: string; values: any }) => (
   <>
     <Text>{name}</Text>
     <div
@@ -56,7 +56,11 @@ export const Default = () => (
       }
 
       return (
-        <ColorSection key={name} name={name} values={variables.color.base[name]} />
+        <ColorSection
+          key={name}
+          name={name}
+          values={variables.color.base[name]}
+        />
       );
     })}
   </>

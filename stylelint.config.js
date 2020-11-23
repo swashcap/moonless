@@ -5,9 +5,7 @@ module.exports = {
     'csstools/value-no-unknown-custom-properties': [
       true,
       {
-        importFrom: [
-          'packages/tokens/dist/css/variables.css',
-        ],
+        importFrom: ['packages/tokens/dist/css/variables.css'],
       },
     ],
   },
