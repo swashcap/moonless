@@ -1,4 +1,10 @@
 {
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "moonless-utils": ["./packages/utils/src"]
+    }
+  },
   "extends": "./tsconfig.json",
   "exclude": [
     ".storybook/**/*",
