@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import { clsx } from 'moonless-utils';
 
 import styles from './Nav.module.css';
@@ -16,7 +16,7 @@ export interface NavItemProps
   isCurrent?: boolean;
 }
 
-export class Nav extends React.Component<NavProps> {
+export class Nav extends Component<NavProps> {
   static Item = ({ children, className, isCurrent, ...rest }: NavItemProps) => {
     return (
       <li className={className}>

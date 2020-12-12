@@ -1,5 +1,4 @@
-import React from 'react';
-
+import { Fragment } from 'react';
 import { VisuallyHidden } from './VisuallyHidden';
 
 export default {
@@ -10,7 +9,7 @@ export default {
 export const Default = () => <VisuallyHidden>Default</VisuallyHidden>;
 
 export const WithFocus = () => (
-  <React.Fragment>
+  <Fragment>
     <VisuallyHidden isFocusable>Default</VisuallyHidden>
     <VisuallyHidden className="storybook-active" isFocusable>
       Active
@@ -18,5 +17,5 @@ export const WithFocus = () => (
     <VisuallyHidden className="storybook-focus" isFocusable>
       Focus
     </VisuallyHidden>
-  </React.Fragment>
+  </Fragment>
 );

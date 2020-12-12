@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import { useId } from 'moonless-utils';
 
 import styles from './TextField.module.css';
@@ -17,7 +17,7 @@ export interface TextFieldProps
   value?: React.InputHTMLAttributes<HTMLInputElement>['value'];
 }
 
-export const TextField = React.forwardRef<HTMLInputElement, TextFieldProps>(
+export const TextField = forwardRef<HTMLInputElement, TextFieldProps>(
   ({ disabled, error, label, id: idProp, onChange, value, ...rest }, ref) => {
     const fallbackId = useId('text-field-');
     const errorId = useId('text-field-error-');

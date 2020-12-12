@@ -19,7 +19,13 @@ const isProdEnv = process.env.NODE_ENV === 'production';
 
 export default [
   {
-    external: ['moonless-utils', 'react', 'react-dom', /@babel\/runtime/],
+    external: [
+      'moonless-utils',
+      'react',
+      'react/jsx-runtime',
+      'react-dom',
+      /@babel\/runtime/,
+    ],
     input: {
       index: path.join(__dirname, 'packages/components/src/index.ts'),
       moonless: path.join(__dirname, 'packages/components/src/moonless.css'),
@@ -54,7 +60,13 @@ export default [
     ].filter(Boolean),
   },
   {
-    external: ['moonless-utils', 'react', 'react-dom', /@babel\/runtime/],
+    external: [
+      'moonless-utils',
+      'react',
+      'react/jsx-runtime',
+      'react-dom',
+      /@babel\/runtime/,
+    ],
     input: {
       index: path.join(__dirname, 'packages/components/src/index.ts'),
       moonless: path.join(__dirname, 'packages/components/src/moonless.css'),

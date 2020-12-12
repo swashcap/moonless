@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import { clsx } from 'moonless-utils';
 
 import styles from './Grid.module.css';
@@ -30,7 +30,7 @@ export interface GridColProps
   span?: GridColSpan;
 }
 
-export class Grid extends React.Component<GridProps> {
+export class Grid extends Component<GridProps> {
   static Col({ className, span, ...rest }: GridColProps) {
     return (
       <div

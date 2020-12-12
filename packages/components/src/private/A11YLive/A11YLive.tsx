@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { VisuallyHidden } from '../../VisuallyHidden/VisuallyHidden';
 
 export interface A11YLiveProps {

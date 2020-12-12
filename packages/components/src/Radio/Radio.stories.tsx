@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { Radio } from './Radio';
 
@@ -8,7 +8,7 @@ export default {
 };
 
 export const Default = () => {
-  const [checked, setChecked] = React.useState(false);
+  const [checked, setChecked] = useState(false);
 
   return <Radio checked={checked} onChange={() => setChecked(!checked)} />;
 };

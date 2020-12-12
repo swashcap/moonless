@@ -7,7 +7,7 @@
   "module": "dist/index.esm.js",
   "name": "moonless-utils",
   "peerDependencies": {
-    "react": "^16.13.1"
+    "react": "^17.0.1"
   },
   "repository": "github:swashcap/moonless",
   "types": "dist/index.d.ts",

@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component, createRef } from 'react';
 import { clsx } from 'moonless-utils';
 
 import { XIcon } from '../Icon/Icon';
@@ -16,8 +16,8 @@ export interface AlertProps
   variant?: AlertVariant;
 }
 
-export class Alert extends React.Component<AlertProps> {
-  private buttonRef = React.createRef<HTMLButtonElement>();
+export class Alert extends Component<AlertProps> {
+  private buttonRef = createRef<HTMLButtonElement>();
 
   focusButton() {
     this.buttonRef.current?.focus();

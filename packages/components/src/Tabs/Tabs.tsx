@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './Tabs.module.css';
 
 export interface TabsProps {

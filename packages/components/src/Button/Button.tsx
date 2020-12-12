@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import { clsx } from 'moonless-utils';
 
 import styles from './Button.module.css';
@@ -88,7 +88,7 @@ const BaseButtonFn = <T extends ButtonElement = HTMLButtonElement>(
   );
 };
 
-const BaseButton = React.forwardRef(
+const BaseButton = forwardRef(
   BaseButtonFn as React.ForwardRefRenderFunction<
     ButtonElement,
     BaseButtonProps<ButtonElement>
@@ -102,7 +102,7 @@ const PrimaryButtonFn = (props: any, ref: any) => (
   <BaseButton ref={ref} variant="primary" {...props} />
 );
 
-export const PrimaryButton = React.forwardRef(
+export const PrimaryButton = forwardRef(
   PrimaryButtonFn as React.ForwardRefRenderFunction<
     ButtonElement,
     ButtonProps<ButtonElement>
@@ -116,7 +116,7 @@ const SecondaryButtonFn = (props: any, ref: any) => (
   <BaseButton ref={ref} variant="secondary" {...props} />
 );
 
-export const SecondaryButton = React.forwardRef(
+export const SecondaryButton = forwardRef(
   SecondaryButtonFn as React.ForwardRefRenderFunction<
     ButtonElement,
     ButtonProps<ButtonElement>

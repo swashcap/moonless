@@ -1,4 +1,4 @@
-import React from 'react';
+import { Component } from 'react';
 import { clsx } from 'moonless-utils';
 
 import styles from './List.module.css';
@@ -13,7 +13,7 @@ export type ListColProps = React.DetailedHTMLProps<
   HTMLDivElement
 >;
 
-export class List extends React.Component<ListProps> {
+export class List extends Component<ListProps> {
   static Item({ className, ...rest }: ListColProps) {
     return <div className={clsx(styles.ListItem, className)} {...rest} />;
   }

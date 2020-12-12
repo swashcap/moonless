@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react';
+import { forwardRef, useEffect, useRef } from 'react';
 import { useId } from 'moonless-utils';
 
 import styles from './Checkbox.module.css';
@@ -20,7 +20,7 @@ export interface CheckboxProps
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Checkbox = React.forwardRef<HTMLInputElement, CheckboxProps>(
+export const Checkbox = forwardRef<HTMLInputElement, CheckboxProps>(
   (
     {
       checked,

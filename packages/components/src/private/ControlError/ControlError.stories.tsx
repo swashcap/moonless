@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { ControlError } from './ControlError';
 
 export default {

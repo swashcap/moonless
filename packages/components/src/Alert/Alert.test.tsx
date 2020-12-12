@@ -1,4 +1,4 @@
-import React from 'react';
+import { createRef } from 'react';
 import { fireEvent, render } from '@testing-library/react';
 
 import { Alert, AlertVariant } from './Alert';
@@ -61,7 +61,7 @@ describe('Alert', () => {
   });
 
   test('It should focus on button.', () => {
-    const ref = React.createRef<Alert>();
+    const ref = createRef<Alert>();
     const { getByRole } = render(
       /* eslint-disable-next-line @typescript-eslint/no-explicit-any */
       <Alert onClose={jest.fn()} ref={ref as any}>

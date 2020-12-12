@@ -1,13 +1,17 @@
 {
   "compilerOptions": {
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
     "declaration": true,
     "declarationDir": "./dist/types",
     "emitDeclarationOnly": true,
-    "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "module": "ES6",
     "moduleResolution": "node",
     "outDir": "./dist",
+    "paths": {
+      "moonless-utils": ["./packages/utils/src"]
+    },
     "plugins": [{
       "name": "typescript-plugin-css-modules"
     }],

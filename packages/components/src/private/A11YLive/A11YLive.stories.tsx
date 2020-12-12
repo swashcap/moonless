@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { A11YLive } from './A11YLive';
 
 export default {

@@ -1,5 +1,4 @@
-import React from 'react';
-
+// import React from 'react';
 import { Text } from '../../packages/components/src';
 import variables from '../../packages/tokens/dist/js/variables.json';
 

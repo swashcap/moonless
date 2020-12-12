@@ -8,7 +8,7 @@ export default {
   title: 'Design/Colors',
 };
 
-const Color = ({ name, value }: { name: string; value: number }) => (
+const Color = ({ name, value }: { name: string; value: string }) => (
   <div
     style={{
       alignItems: 'center',

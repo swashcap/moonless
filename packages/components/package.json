@@ -11,9 +11,9 @@
   "module": "dist/index.esm.js",
   "name": "moonless-components",
   "peerDependencies": {
-    "@babel/runtime": "^7.12.1",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "@babel/runtime": "^7.12.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   },
   "repository": "github:swashcap/moonless",
   "sideEffects": [

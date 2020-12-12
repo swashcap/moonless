@@ -1,5 +1,3 @@
-import React from 'react';
-
 import styles from './Breadcrumb.module.css';
 import { Link } from '../Link/Link';
 

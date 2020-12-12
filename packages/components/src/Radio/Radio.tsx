@@ -1,4 +1,4 @@
-import React from 'react';
+import { forwardRef } from 'react';
 import { useId } from 'moonless-utils';
 
 import styles from './Radio.module.css';
@@ -16,7 +16,7 @@ export interface RadioProps
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 }
 
-export const Radio = React.forwardRef<HTMLInputElement, RadioProps>(
+export const Radio = forwardRef<HTMLInputElement, RadioProps>(
   ({ checked, disabled, id: idProp, label, onChange, ...rest }, ref) => {
     const fallbackId = useId('checkbox-');
 

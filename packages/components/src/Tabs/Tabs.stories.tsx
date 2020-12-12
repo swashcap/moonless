@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState } from 'react';
 
 import { Tabs } from './Tabs';
 
@@ -10,7 +10,7 @@ export default {
 export const Default = () => <Tabs onChange={console.log} items={[]} />;
 
 export const WithContent = () => {
-  const [index, setIndex] = React.useState(0);
+  const [index, setIndex] = useState(0);
 
   return (
     <Tabs

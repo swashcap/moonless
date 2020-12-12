@@ -1,4 +1,3 @@
-import React from 'react';
 import { clsx } from 'moonless-utils';
 
 import styles from './Icon.module.css';

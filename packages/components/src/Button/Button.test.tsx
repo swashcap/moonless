@@ -1,4 +1,4 @@
-import React from 'react';
+import { createRef } from 'react';
 import { render } from '@testing-library/react';
 
 import { ButtonSize, PrimaryButton, SecondaryButton } from './Button';
@@ -50,7 +50,7 @@ describe('Button', () => {
     );
 
     test('It should forward ref.', () => {
-      const ref = React.createRef<HTMLButtonElement>();
+      const ref = createRef<HTMLButtonElement>();
       const { getByRole } = render(<Component ref={ref}>Button</Component>);
 
       expect(getByRole('button')).toBe(ref.current);
