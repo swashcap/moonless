@@ -30,7 +30,13 @@ const Color = ({ name, value }: { name: string; value: number }) => (
   </div>
 );
 
-const ColorSection = ({ name, values }: { name: string; values: Record<string, string> }) => (
+const ColorSection = ({
+  name,
+  values,
+}: {
+  name: string;
+  values: Record<string, string>;
+}) => (
   <>
     <Text>{name}</Text>
     <div
@@ -51,25 +57,19 @@ export const Default = () => (
     {Object.keys(variables.color.base).map((name) => {
       const values = variables.color.base[name];
 
-      if (typeof values === "string") {
+      if (typeof values === 'string') {
         return (
           <ColorSection
             key={name}
             name={name}
             values={{
-              [name]: values
+              [name]: values,
             }}
           />
         );
       }
 
-      return (
-        <ColorSection
-          key={name}
-          name={name}
-          values={values}
-        />
-      );
+      return <ColorSection key={name} name={name} values={values} />;
     })}
   </>
 );
