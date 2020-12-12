@@ -2,7 +2,7 @@ import React from 'react';
 import getContrast from 'get-contrast';
 
 import { Text } from '../../packages/components/src/';
-import variables from '../../packages/tokens/dist/js/variables.cjs';
+import variables from '../../packages/tokens/dist/js/variables.json';
 
 export default {
   title: 'Design/Colors',
@@ -30,7 +30,7 @@ const Color = ({ name, value }: { name: string; value: number }) => (
   </div>
 );
 
-const ColorSection = ({ name, values }: { name: string; values: any }) => (
+const ColorSection = ({ name, values }: { name: string; values: Record<string, string> }) => (
   <>
     <Text>{name}</Text>
     <div
@@ -40,7 +40,7 @@ const ColorSection = ({ name, values }: { name: string; values: any }) => (
       }}
     >
       {Object.keys(values).map((key) => (
-        <Color key={key} name={values[key].name} value={values[key].value} />
+        <Color key={key} name={key} value={values[key]} />
       ))}
     </div>
   </>
@@ -51,15 +51,23 @@ export const Default = () => (
     {Object.keys(variables.color.base).map((name) => {
       const values = variables.color.base[name];
 
-      if (values.value) {
-        return null;
+      if (typeof values === "string") {
+        return (
+          <ColorSection
+            key={name}
+            name={name}
+            values={{
+              [name]: values
+            }}
+          />
+        );
       }
 
       return (
         <ColorSection
           key={name}
           name={name}
-          values={variables.color.base[name]}
+          values={values}
         />
       );
     })}

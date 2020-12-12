@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Text } from '../../packages/components/src';
-import variables from '../../packages/tokens/dist/js/variables.cjs';
+import variables from '../../packages/tokens/dist/js/variables.json';
 
 export default {
   title: 'Design/Space',
@@ -15,7 +15,7 @@ export const Default = () => (
   >
     <tbody>
       {Object.keys(variables.size.space).map((name) => {
-        const value = variables.size.space[name].value;
+        const value = variables.size.space[name];
 
         return (
           <tr key={name}>
@@ -26,7 +26,7 @@ export const Default = () => (
               <div
                 style={{
                   background:
-                    variables.color.theme.primary.backgroundColor.base.value,
+                    variables.color.theme.primary.backgroundColor.base,
                   height: value,
                   width: value,
                 }}
