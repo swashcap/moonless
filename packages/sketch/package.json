@@ -1,0 +1,12 @@
+{
+  "author": "Cory Reed",
+  "dependencies": {
+    "moonless-tokens": "^0.0.1"
+  },
+  "homepage": "https://github.com/swashcap/moonless#readme",
+  "license": "MIT",
+  "name": "moonless-sketch",
+  "repository": "github:swashcap/moonless",
+  "type": "module",
+  "version": "0.0.1"
+}

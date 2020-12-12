@@ -5,8 +5,8 @@
       "transformGroup": "js",
       "buildPath": "./dist/js/",
       "files": [{
-        "destination": "variables.cjs.js",
-        "format": "javascript/module"
+        "destination": "variables.json",
+        "format": "json/nested"
       }, {
         "destination": "variables.es6.js",
         "format": "javascript/es6"
