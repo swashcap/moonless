@@ -48,7 +48,6 @@ export class Grid extends Component<GridProps> {
           span === '10' && styles.GridCol10,
           span === '11' && styles.GridCol11,
           span === '12' && styles.GridCol12,
-
           className
         )}
         {...rest}

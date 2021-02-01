@@ -7,3 +7,11 @@ exports[`Grid It should render. 1`] = `
   />
 </div>
 `;
+
+exports[`GridCol It should render. 1`] = `
+<div>
+  <div
+    class="GridCol"
+  />
+</div>
+`;
