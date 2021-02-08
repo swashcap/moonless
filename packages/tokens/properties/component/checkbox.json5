@@ -1,5 +1,5 @@
 {
-  "components": {
+  "component": {
     "checkbox": {
       "error": {
         "marginTop": { "value": "{size.space.100.value}" }

@@ -4,7 +4,7 @@
       "title": {
         "fontSize": { "value": "{size.font.600.value}" },
         "fontWeight": { "value": "{component.text.fontWeight.regular.value}" },
-        "lineHeight": { "value": "{size.lineHeight.600.value" }
+        "lineHeight": { "value": "{size.lineHeight.600.value}" }
       },
       "headline1": {
         "fontSize": { "value": "{size.font.500.value}" },
